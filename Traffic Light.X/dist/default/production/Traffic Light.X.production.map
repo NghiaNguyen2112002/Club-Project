@@ -1,0 +1,871 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Thu Feb 09 09:56:19 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .code___init.o       code   0x000006    program   0x000002
+      InterruptVectorHigh       code   0x000008    program   0x000006
+         .romdata_c018i.o    romdata   0x00000e    program   0x000000
+     .romdata_interrupt.o    romdata   0x00000e    program   0x000000
+     .idata_interrupt.o_i    romdata   0x00000e    program   0x000000
+           .romdata_lcd.o    romdata   0x00000e    program   0x000000
+ .romdata_button_matrix.o    romdata   0x00000e    program   0x000000
+        .idata_output.o_i    romdata   0x00000e    program   0x000000
+        .romdata_output.o    romdata   0x00000e    program   0x000000
+           .romdata_fsm.o    romdata   0x00000e    program   0x000000
+        .idata_global.o_i    romdata   0x00000e    program   0x000008
+        .romdata_global.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
+          .romdata_main.o    romdata   0x00000e    program   0x000000
+          .idata_main.o_i    romdata   0x00000e    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
+         .romdata_timer.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x00000e    program   0x000000
+        .romdata___init.o    romdata   0x00000e    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x000016    program   0x000000
+           .code_global.o       code   0x000016    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x000016    program   0x000000
+           .idata_fsm.o_i    romdata   0x000016    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x000016    program   0x000000
+        .idata___init.o_i    romdata   0x000016    program   0x000000
+         .idata_c018i.o_i    romdata   0x000016    program   0x000000
+            .code_c018i.o       code   0x000016    program   0x000000
+       InterruptVectorLow       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x000032
+              .code_fsm.o       code   0x000050    program   0x000784
+              .code_lcd.o       code   0x0007d4    program   0x000676
+            .code_timer.o       code   0x000e4a    program   0x00054c
+    .code_button_matrix.o       code   0x001396    program   0x0002c2
+        .code_interrupt.o       code   0x001658    program   0x0001bc
+             .code_main.o       code   0x001814    program   0x000162
+             .stringtable    romdata   0x001976    program   0x0000ee
+               _cinit_scn       code   0x001a64    program   0x00009e
+                     PROG       code   0x001b02    program   0x00005a
+         .code_fxd3232u.o       code   0x001b5c    program   0x000048
+         .code_fxd2424u.o       code   0x001ba4    program   0x00003a
+         .code_fxd1616u.o       code   0x001bde    program   0x00002c
+                    .code       code   0x001c0a    program   0x000020
+             _startup_scn       code   0x001c2a    program   0x00001c
+           .code_output.o       code   0x001c46    program   0x00000e
+         .idata_timer.o_i    romdata   0x001c54    program   0x000018
+           .idata_lcd.o_i    romdata   0x001c6c    program   0x000020
+ .idata_button_matrix.o_i    romdata   0x001c8c    program   0x000018
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+    .config_300009_main.o    romdata   0x300009    program   0x000001
+    .config_30000a_main.o    romdata   0x30000a    program   0x000001
+    .config_30000b_main.o    romdata   0x30000b    program   0x000001
+    .config_30000c_main.o    romdata   0x30000c    program   0x000001
+    .config_30000d_main.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000009
+   .udata_button_matrix.o      udata   0x000080       data   0x000050
+             .idata_lcd.o      idata   0x0000d0       data   0x000020
+           .udata_c018i.o      udata   0x0000f0       data   0x00000a
+           .udata_timer.o      udata   0x0000fa       data   0x000004
+             .udata_fsm.o      udata   0x0000fe       data   0x000001
+        .udata_fxd3232u.o      udata   0x0000ff       data   0x000000
+        .idata_fxd2424u.o      idata   0x0000ff       data   0x000000
+        .udata_fxd2424u.o      udata   0x0000ff       data   0x000000
+        .idata_fxd1616u.o      idata   0x0000ff       data   0x000000
+        .idata_fxd3232u.o      idata   0x0000ff       data   0x000000
+          .udata___init.o      udata   0x0000ff       data   0x000000
+        .udata_fxd1616u.o      udata   0x0000ff       data   0x000000
+          .udata_global.o      udata   0x0000ff       data   0x000000
+             .idata_fsm.o      idata   0x0000ff       data   0x000000
+          .idata___init.o      idata   0x0000ff       data   0x000000
+          .idata_output.o      idata   0x0000ff       data   0x000000
+          .udata_output.o      udata   0x0000ff       data   0x000000
+       .idata_interrupt.o      idata   0x0000ff       data   0x000000
+       .udata_interrupt.o      udata   0x0000ff       data   0x000000
+            .idata_main.o      idata   0x0000ff       data   0x000000
+            .udata_main.o      udata   0x0000ff       data   0x000000
+           .idata_c018i.o      idata   0x0000ff       data   0x000000
+                   .stack      udata   0x000e00       data   0x000100
+           .idata_timer.o      idata   0x000f00       data   0x000018
+   .idata_button_matrix.o      idata   0x000f18       data   0x000018
+          .idata_global.o      idata   0x000f30       data   0x000008
+             .udata_lcd.o      udata   0x000f38       data   0x000004
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000015      
+                            0x000018    0x001ca3      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            7341 out of 66584 program addresses used, program memory utilization is 11%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   D2424S   0x001b2c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001b3a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001b36    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x001b52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001b18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 Delay_ms   0x0018ee    program     extern E:\PIC\Club\Traffic Light.X\main.c
+            Delay_virtual   0x00081a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                 FSM_Init   0x000050    program     extern E:\PIC\Club\Traffic Light.X\fsm.c
+         FSM_TrafficLight   0x000056    program     extern E:\PIC\Club\Traffic Light.X\fsm.c
+                 FXD1616U   0x001bde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x001b02    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x001ba4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 FXD3232U   0x001b5c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 INT_Init   0x001658    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+      InterruptVectorHigh   0x000008    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+       InterruptVectorLow   0x000018    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                 KEY_Init   0x001396    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+            KEY_IsPressed   0x0015aa    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+         KEY_IsPressed_ms   0x0015ee    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+              KEY_IsStuck   0x001578    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+              KEY_Reading   0x00139e    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+          LCD_ClearBuffer   0x000a40    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                LCD_Delay   0x0007d4    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+        LCD_DisplayScreen   0x000de0    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                 LCD_Init   0x00096c    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+      LCD_PrintCharBuffer   0x000af2    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+       LCD_PrintNumBuffer   0x000b48    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+    LCD_PrintStringBuffer   0x000d8a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+          LCD_SendCommand   0x00091c    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+            LCD_SetCursor   0x000a10    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+     LCD_UpdateCharBuffer   0x000aac    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+           LCD_Write4bits   0x00088a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+         LCD_WriteCommand   0x0008ea    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+            LCD_WriteData   0x0008b8    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                 OUT_Init   0x001c46    program     extern E:\PIC\Club\Traffic Light.X\output.c
+            OUT_OnGreen_1   0x001c4c    program     extern E:\PIC\Club\Traffic Light.X\output.c
+            OUT_OnGreen_2   0x001c52    program     extern E:\PIC\Club\Traffic Light.X\output.c
+              OUT_OnRed_1   0x001c48    program     extern E:\PIC\Club\Traffic Light.X\output.c
+              OUT_OnRed_2   0x001c4e    program     extern E:\PIC\Club\Traffic Light.X\output.c
+           OUT_OnYellow_1   0x001c4a    program     extern E:\PIC\Club\Traffic Light.X\output.c
+           OUT_OnYellow_2   0x001c50    program     extern E:\PIC\Club\Traffic Light.X\output.c
+                 SYS_Init   0x001876    program     extern E:\PIC\Club\Traffic Light.X\main.c
+                TMR0_Init   0x000e4a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR0_Isr   0x00125a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR0_SetTime_ms   0x0012d2    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR0_Start   0x00109c    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR0_Stop   0x00124a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR1_Init   0x000efe    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR1_Isr   0x001278    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR1_SetTime_ms   0x0012f8    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR1_Start   0x001128    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR1_Stop   0x00124e    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR2_Init   0x000fba    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR2_Isr   0x001296    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR2_SetTime_ms   0x001330    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR2_Start   0x0011b6    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR2_Stop   0x001252    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR3_Init   0x000fe6    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR3_Isr   0x0012b4    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR3_SetTime_ms   0x001356    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR3_Start   0x0011be    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR3_Stop   0x001256    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+       ___return_lbl00000   0x001bdc    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x001ba2    program     static                          
+       ___return_lbl00000   0x001c08    program     static                          
+       ___return_lbl00001   0x00001c    program     static                          
+       ___return_lbl00001   0x001c44    program     static                          
+       ___return_lbl00002   0x00000c    program     static                          
+       ___return_lbl00002   0x001b00    program     static                          
+               __config_0   0x300001    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_1   0x300002    program     static E:\PIC\Club\Traffic Light.X\main.c
+              __config_10   0x30000d    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_2   0x300003    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_3   0x300005    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_4   0x300006    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_5   0x300008    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_6   0x300009    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_7   0x30000a    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_8   0x30000b    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_9   0x30000c    program     static E:\PIC\Club\Traffic Light.X\main.c
+                   __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x001a53    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_1   0x001a42    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_10   0x0019e6    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_11   0x0019de    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_12   0x0019d5    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_13   0x0019cc    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_14   0x0019c3    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_15   0x0019ba    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_16   0x0019a9    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_17   0x001998    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_18   0x001987    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_19   0x001976    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_2   0x001a31    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_3   0x001a20    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_4   0x001a17    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_5   0x001a0e    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_6   0x001a06    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_7   0x0019fe    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_8   0x0019f6    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_9   0x0019ee    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+            __zero_memory   0x001c0a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x001a64    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _false   0x001b9e    program     static                          
+                   _false   0x001bd8    program     static                          
+                 _startup   0x001c2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x001c20    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x001ad6    program     static                          
+            copy_one_byte   0x001adc    program     static                          
+                     done   0x001b00    program     static                          
+             done_copying   0x001aea    program     static                          
+                  endloop   0x001c04    program     static                          
+                 high_isr   0x001744    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                     loop   0x001be8    program     static                          
+                     loop   0x001b6a    program     static                          
+                     loop   0x001bb0    program     static                          
+                     loop   0x001c3a    program     static                          
+                   loop_h   0x001c18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001c22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x001660    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                     main   0x001814    program     extern E:\PIC\Club\Traffic Light.X\main.c
+                     test   0x001a7e    program     static                          
+               zero_block   0x001c18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+             ButtonBuffer   0x000f18       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+    CounterForButtonPress   0x0000b0       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+    DebounceButtonBuffer1   0x000080       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+    DebounceButtonBuffer2   0x000090       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EEADRH   0x000faa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+       FlagForButtonPress   0x0000a0       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                LcdScreen   0x0000d0       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+               MUL_timer0   0x000f10       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer1   0x000f12       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer2   0x000f14       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer3   0x000f16       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+        MaskInputOfButton   0x000f2c       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+       MaskOutputOfButton   0x000f28       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\fsm.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\lcd.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\timer.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\main.c
+          _counterLight_1   0x000f33       data     extern E:\PIC\Club\Traffic Light.X\global.c
+          _counterLight_2   0x000f34       data     extern E:\PIC\Club\Traffic Light.X\global.c
+           _flagEvery1Sec   0x000f37       data     extern E:\PIC\Club\Traffic Light.X\global.c
+               _timeGreen   0x000f31       data     extern E:\PIC\Club\Traffic Light.X\global.c
+        _timeOutAjustMode   0x000f35       data     extern E:\PIC\Club\Traffic Light.X\global.c
+                 _timeRed   0x000f30       data     extern E:\PIC\Club\Traffic Light.X\global.c
+              _timeYellow   0x000f32       data     extern E:\PIC\Club\Traffic Light.X\global.c
+           counter_timer0   0x000f08       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer1   0x000f0a       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer2   0x000f0c       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer3   0x000f0e       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+                curr_byte   0x0000f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              current_col   0x000f3a       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+              current_row   0x000f38       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                 data_ptr   0x0000f7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              flag_timer0   0x0000fa       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer1   0x0000fb       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer2   0x0000fc       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer3   0x0000fd       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+                     mode   0x0000fe       data     extern E:\PIC\Club\Traffic Light.X\fsm.c
+                     prom   0x0000f0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+             value_timer0   0x000f00       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer1   0x000f02       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer2   0x000f04       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer3   0x000f06       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+      InterruptVectorHigh   0x000008    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+       ___return_lbl00002   0x00000c    program     static                          
+       InterruptVectorLow   0x000018    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+       ___return_lbl00001   0x00001c    program     static                          
+                 FSM_Init   0x000050    program     extern E:\PIC\Club\Traffic Light.X\fsm.c
+         FSM_TrafficLight   0x000056    program     extern E:\PIC\Club\Traffic Light.X\fsm.c
+                LCD_Delay   0x0007d4    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+            Delay_virtual   0x00081a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+           LCD_Write4bits   0x00088a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+            LCD_WriteData   0x0008b8    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+         LCD_WriteCommand   0x0008ea    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+          LCD_SendCommand   0x00091c    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                 LCD_Init   0x00096c    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+            LCD_SetCursor   0x000a10    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+          LCD_ClearBuffer   0x000a40    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+     LCD_UpdateCharBuffer   0x000aac    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+      LCD_PrintCharBuffer   0x000af2    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+       LCD_PrintNumBuffer   0x000b48    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+    LCD_PrintStringBuffer   0x000d8a    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+        LCD_DisplayScreen   0x000de0    program     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                TMR0_Init   0x000e4a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR1_Init   0x000efe    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR2_Init   0x000fba    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR3_Init   0x000fe6    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR0_Start   0x00109c    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR1_Start   0x001128    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR2_Start   0x0011b6    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+               TMR3_Start   0x0011be    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR0_Stop   0x00124a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR1_Stop   0x00124e    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR2_Stop   0x001252    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                TMR3_Stop   0x001256    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR0_Isr   0x00125a    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR1_Isr   0x001278    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR2_Isr   0x001296    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 TMR3_Isr   0x0012b4    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR0_SetTime_ms   0x0012d2    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR1_SetTime_ms   0x0012f8    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR2_SetTime_ms   0x001330    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+          TMR3_SetTime_ms   0x001356    program     extern E:\PIC\Club\Traffic Light.X\timer.c
+                 KEY_Init   0x001396    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+              KEY_Reading   0x00139e    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+              KEY_IsStuck   0x001578    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+            KEY_IsPressed   0x0015aa    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+         KEY_IsPressed_ms   0x0015ee    program     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+                 INT_Init   0x001658    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                  low_isr   0x001660    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                 high_isr   0x001744    program     extern E:\PIC\Club\Traffic Light.X\interrupt.c
+                     main   0x001814    program     extern E:\PIC\Club\Traffic Light.X\main.c
+                 SYS_Init   0x001876    program     extern E:\PIC\Club\Traffic Light.X\main.c
+                 Delay_ms   0x0018ee    program     extern E:\PIC\Club\Traffic Light.X\main.c
+              __string_19   0x001976    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_18   0x001987    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_17   0x001998    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_16   0x0019a9    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_15   0x0019ba    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_14   0x0019c3    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_13   0x0019cc    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_12   0x0019d5    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_11   0x0019de    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+              __string_10   0x0019e6    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_9   0x0019ee    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_8   0x0019f6    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_7   0x0019fe    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_6   0x001a06    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_5   0x001a0e    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_4   0x001a17    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_3   0x001a20    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_2   0x001a31    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_1   0x001a42    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+               __string_0   0x001a53    program     static E:\PIC\Club\Traffic Light.X\fsm.c
+                _do_cinit   0x001a64    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x001a7e    program     static                          
+                copy_loop   0x001ad6    program     static                          
+            copy_one_byte   0x001adc    program     static                          
+             done_copying   0x001aea    program     static                          
+       ___return_lbl00002   0x001b00    program     static                          
+                     done   0x001b00    program     static                          
+                 FXD2424S   0x001b02    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001b18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x001b2c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001b36    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001b3a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x001b52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD3232U   0x001b5c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x001b6a    program     static                          
+                   _false   0x001b9e    program     static                          
+       ___return_lbl00000   0x001ba2    program     static                          
+                 FXD2424U   0x001ba4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x001bb0    program     static                          
+                   _false   0x001bd8    program     static                          
+       ___return_lbl00000   0x001bdc    program     static                          
+                 FXD1616U   0x001bde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x001be8    program     static                          
+                  endloop   0x001c04    program     static                          
+       ___return_lbl00000   0x001c08    program     static                          
+            __zero_memory   0x001c0a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x001c18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x001c18    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x001c20    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001c22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x001c2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001c3a    program     static                          
+       ___return_lbl00001   0x001c44    program     static                          
+                 OUT_Init   0x001c46    program     extern E:\PIC\Club\Traffic Light.X\output.c
+              OUT_OnRed_1   0x001c48    program     extern E:\PIC\Club\Traffic Light.X\output.c
+           OUT_OnYellow_1   0x001c4a    program     extern E:\PIC\Club\Traffic Light.X\output.c
+            OUT_OnGreen_1   0x001c4c    program     extern E:\PIC\Club\Traffic Light.X\output.c
+              OUT_OnRed_2   0x001c4e    program     extern E:\PIC\Club\Traffic Light.X\output.c
+           OUT_OnYellow_2   0x001c50    program     extern E:\PIC\Club\Traffic Light.X\output.c
+            OUT_OnGreen_2   0x001c52    program     extern E:\PIC\Club\Traffic Light.X\output.c
+               __config_0   0x300001    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_1   0x300002    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_2   0x300003    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_3   0x300005    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_4   0x300006    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_5   0x300008    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_6   0x300009    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_7   0x30000a    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_8   0x30000b    program     static E:\PIC\Club\Traffic Light.X\main.c
+               __config_9   0x30000c    program     static E:\PIC\Club\Traffic Light.X\main.c
+              __config_10   0x30000d    program     static E:\PIC\Club\Traffic Light.X\main.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\lcd.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\fsm.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\main.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Traffic Light.X\timer.c
+    DebounceButtonBuffer1   0x000080       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+    DebounceButtonBuffer2   0x000090       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+       FlagForButtonPress   0x0000a0       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+    CounterForButtonPress   0x0000b0       data     static E:\PIC\Club\Traffic Light.X\button_matrix.c
+                LcdScreen   0x0000d0       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                     prom   0x0000f0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000f7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              flag_timer0   0x0000fa       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer1   0x0000fb       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer2   0x0000fc       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+              flag_timer3   0x0000fd       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+                     mode   0x0000fe       data     extern E:\PIC\Club\Traffic Light.X\fsm.c
+             value_timer0   0x000f00       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer1   0x000f02       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer2   0x000f04       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             value_timer3   0x000f06       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer0   0x000f08       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer1   0x000f0a       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer2   0x000f0c       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+           counter_timer3   0x000f0e       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer0   0x000f10       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer1   0x000f12       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer2   0x000f14       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+               MUL_timer3   0x000f16       data     extern E:\PIC\Club\Traffic Light.X\timer.c
+             ButtonBuffer   0x000f18       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+       MaskOutputOfButton   0x000f28       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+        MaskInputOfButton   0x000f2c       data     extern E:\PIC\Club\Traffic Light.X\button_matrix.c
+                 _timeRed   0x000f30       data     extern E:\PIC\Club\Traffic Light.X\global.c
+               _timeGreen   0x000f31       data     extern E:\PIC\Club\Traffic Light.X\global.c
+              _timeYellow   0x000f32       data     extern E:\PIC\Club\Traffic Light.X\global.c
+          _counterLight_1   0x000f33       data     extern E:\PIC\Club\Traffic Light.X\global.c
+          _counterLight_2   0x000f34       data     extern E:\PIC\Club\Traffic Light.X\global.c
+        _timeOutAjustMode   0x000f35       data     extern E:\PIC\Club\Traffic Light.X\global.c
+           _flagEvery1Sec   0x000f37       data     extern E:\PIC\Club\Traffic Light.X\global.c
+              current_row   0x000f38       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+              current_col   0x000f3a       data     extern E:\PIC\Club\Traffic Light.X\lcd.c
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   EEADRH   0x000faa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+
+
