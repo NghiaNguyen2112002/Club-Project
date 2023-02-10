@@ -44,6 +44,8 @@ void LCD_ClearBuffer(void);
 void LCD_PrintCharBuffer(unsigned char x, unsigned char y, unsigned char c);
 void LCD_PrintNumBuffer(unsigned char x, unsigned char y, long num);
 void LCD_PrintStringBuffer(unsigned char x, unsigned char y, const rom unsigned char* str);
+void LCD_PrintStringBufferL(unsigned char x, unsigned char y, const rom unsigned char* str, unsigned char length);
+
 void LCD_DisplayScreen(void);
 
 

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=
+SOURCEFILES_QUOTED_IF_SPACED=button_matrix.c interrupt.c lcd.c timer.c main.c i2c_ds1307.c fsm.c global.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=
-POSSIBLE_DEPFILES=
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/button_matrix.o ${OBJECTDIR}/interrupt.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/i2c_ds1307.o ${OBJECTDIR}/fsm.o ${OBJECTDIR}/global.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/button_matrix.o.d ${OBJECTDIR}/interrupt.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/i2c_ds1307.o.d ${OBJECTDIR}/fsm.o.d ${OBJECTDIR}/global.o.d
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES=${OBJECTDIR}/button_matrix.o ${OBJECTDIR}/interrupt.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/i2c_ds1307.o ${OBJECTDIR}/fsm.o ${OBJECTDIR}/global.o
 
 # Source Files
-SOURCEFILES=
+SOURCEFILES=button_matrix.c interrupt.c lcd.c timer.c main.c i2c_ds1307.c fsm.c global.c
 
 
 
@@ -102,7 +102,135 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/button_matrix.o: button_matrix.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/button_matrix.o.d 
+	@${RM} ${OBJECTDIR}/button_matrix.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/button_matrix.o   button_matrix.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/button_matrix.o 
+	@${FIXDEPS} "${OBJECTDIR}/button_matrix.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/interrupt.o: interrupt.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/interrupt.o.d 
+	@${RM} ${OBJECTDIR}/interrupt.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/interrupt.o   interrupt.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/interrupt.o 
+	@${FIXDEPS} "${OBJECTDIR}/interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/lcd.o: lcd.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/lcd.o.d 
+	@${RM} ${OBJECTDIR}/lcd.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lcd.o   lcd.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/lcd.o 
+	@${FIXDEPS} "${OBJECTDIR}/lcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/timer.o: timer.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timer.o.d 
+	@${RM} ${OBJECTDIR}/timer.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/timer.o   timer.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main.o   main.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/main.o 
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/i2c_ds1307.o: i2c_ds1307.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/i2c_ds1307.o.d 
+	@${RM} ${OBJECTDIR}/i2c_ds1307.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/i2c_ds1307.o   i2c_ds1307.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/i2c_ds1307.o 
+	@${FIXDEPS} "${OBJECTDIR}/i2c_ds1307.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/fsm.o: fsm.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/fsm.o.d 
+	@${RM} ${OBJECTDIR}/fsm.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fsm.o   fsm.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fsm.o 
+	@${FIXDEPS} "${OBJECTDIR}/fsm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/global.o: global.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/global.o.d 
+	@${RM} ${OBJECTDIR}/global.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG  -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/global.o   global.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/global.o 
+	@${FIXDEPS} "${OBJECTDIR}/global.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
+${OBJECTDIR}/button_matrix.o: button_matrix.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/button_matrix.o.d 
+	@${RM} ${OBJECTDIR}/button_matrix.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/button_matrix.o   button_matrix.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/button_matrix.o 
+	@${FIXDEPS} "${OBJECTDIR}/button_matrix.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/interrupt.o: interrupt.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/interrupt.o.d 
+	@${RM} ${OBJECTDIR}/interrupt.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/interrupt.o   interrupt.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/interrupt.o 
+	@${FIXDEPS} "${OBJECTDIR}/interrupt.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/lcd.o: lcd.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/lcd.o.d 
+	@${RM} ${OBJECTDIR}/lcd.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lcd.o   lcd.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/lcd.o 
+	@${FIXDEPS} "${OBJECTDIR}/lcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/timer.o: timer.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timer.o.d 
+	@${RM} ${OBJECTDIR}/timer.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/timer.o   timer.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/timer.o 
+	@${FIXDEPS} "${OBJECTDIR}/timer.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main.o   main.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/main.o 
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/i2c_ds1307.o: i2c_ds1307.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/i2c_ds1307.o.d 
+	@${RM} ${OBJECTDIR}/i2c_ds1307.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/i2c_ds1307.o   i2c_ds1307.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/i2c_ds1307.o 
+	@${FIXDEPS} "${OBJECTDIR}/i2c_ds1307.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/fsm.o: fsm.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/fsm.o.d 
+	@${RM} ${OBJECTDIR}/fsm.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/fsm.o   fsm.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/fsm.o 
+	@${FIXDEPS} "${OBJECTDIR}/fsm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/global.o: global.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/global.o.d 
+	@${RM} ${OBJECTDIR}/global.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/global.o   global.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/global.o 
+	@${FIXDEPS} "${OBJECTDIR}/global.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -110,11 +238,11 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 else
 ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -l ${MP_CC_DIR}\\..\\lib  -o ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -u_CRUNTIME -l ${MP_CC_DIR}\\..\\lib  -o ${DISTDIR}/Smart_Clock.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 endif
 
 

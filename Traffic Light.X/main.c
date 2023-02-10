@@ -16,7 +16,11 @@ void Delay_ms(int value);
 void main(void) {
 
     SYS_Init();
-    Delay_ms(100);
+    
+    LCD_PrintStringBuffer(0, 0, " TRAFFIC  LIGHT ");
+    LCD_DisplayScreen();
+    Delay_ms(2000);
+    LCD_ClearBuffer();
     
     while(1){
         if(flag_timer0){

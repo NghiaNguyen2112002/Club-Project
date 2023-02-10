@@ -150,9 +150,15 @@ void LCD_PrintNumBuffer(unsigned char x, unsigned char y, long num){
     }
     else if(num == 0){
         LCD_UpdateCharBuffer('0');
-        LCD_UpdateCharBuffer(' ');
-        LCD_UpdateCharBuffer(' ');
+        LCD_UpdateCharBuffer('0');
+//        LCD_UpdateCharBuffer(' ');
+//        LCD_UpdateCharBuffer(' ');
         return;
+    }
+    
+    else if(num < 10){
+        LCD_UpdateCharBuffer('0');
+//        LCD_UpdateCharBuffer(num + '0');
     }
     
     for(i = 10; i > 0; i--){
@@ -167,8 +173,8 @@ void LCD_PrintNumBuffer(unsigned char x, unsigned char y, long num){
         power_of_10 /= 10;
     }
 
-    LCD_UpdateCharBuffer(' ');
-    LCD_UpdateCharBuffer(' ');
+//    LCD_UpdateCharBuffer(' ');
+//    LCD_UpdateCharBuffer(' ');
 
 }
 
@@ -181,6 +187,12 @@ void LCD_PrintStringBuffer(unsigned char x, unsigned char y, const rom unsigned 
     }
 }
 
+void LCD_PrintStringBufferL(unsigned char x, unsigned char y, const rom unsigned char* str, unsigned char length){
+    unsigned char i;
+    current_row = x % 2;
+    current_col = y % 16;
+    for(i = 0; i < length; i++) LCD_UpdateCharBuffer(str[i]);
+}
 void LCD_DisplayScreen(void){
     unsigned char i;
     
