@@ -32,13 +32,16 @@ void main(void) {
         }
         if(flag_timer1){
             flag_timer1 = 0;
-            KEY_Reading();            
+            KEY_Reading();     
+
         }
         if(flag_timer3){
             flag_timer3 = 0;
             LCD_DisplayScreen();
         }
+        
         FSM_TrafficLight();
+
     }
     return;
 }
