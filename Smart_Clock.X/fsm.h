@@ -28,8 +28,8 @@
 #define INDEX_MONTH_LCD             8
 #define INDEX_YEAR_LCD              11
 
-#define TIME_OUT_FOR_ADJUSTMENT     15          //15s
-#define TIME_OUT_ALARM_GO_OFF       30          //30s
+#define TIME_OUT_FOR_ADJUSTMENT     15000          //15s
+#define TIME_OUT_ALARM_GO_OFF       30000          //30s
 
 enum Mode {INIT, NORMAL_DISPLAY, 
             ADJUST_TIME, ADJUST_MIN, ADJUST_HOUR,

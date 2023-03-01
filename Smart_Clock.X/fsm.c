@@ -72,11 +72,7 @@ void FSM_AlarmControl(void){
             
             break;
         case NORMAL_DISPLAY:
-            if(_flagEverySec){
-                _flagEverySec = 0;
-                DisplayTime();
-            }
-            
+            DisplayTime();
 //            compare alarm time
             if(_flagAlarm){
                 if(_hour == _hourAlarm && _minute == _minuteAlarm && _second == 0){

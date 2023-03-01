@@ -29,9 +29,9 @@ extern unsigned char _hour, _minute, _second,
 extern unsigned char _hourAlarm, _minuteAlarm;
 extern unsigned char _flagAlarm;
 
-extern unsigned char _flagEverySec, _flagBlinkCursor, _flagGetTime;
+extern unsigned char _flagBlinkCursor, _flagGetTime;
 
-extern unsigned char _counterTimeOut, _counterEvery_ms;
+extern unsigned int _counterTimeOut, _counterEvery_ms;
 
 #endif	/* GLOBAL_H */
 

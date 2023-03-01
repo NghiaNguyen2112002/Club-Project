@@ -47,6 +47,7 @@ void LCD_PrintStringBuffer(unsigned char x, unsigned char y, const rom unsigned 
 void LCD_PrintStringBufferL(unsigned char x, unsigned char y, const rom unsigned char* str, unsigned char length);
 
 void LCD_DisplayScreen(void);
+void LCD_CreateChar(unsigned char index, unsigned char* icon);
 
 
 

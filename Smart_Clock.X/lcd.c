@@ -206,3 +206,12 @@ void LCD_DisplayScreen(void){
         LCD_WriteData(LcdScreen[1][i]);
     }
 }
+
+void LCD_CreateChar(unsigned char index, unsigned char* icon){
+    unsigned char i;
+    LCD_WriteCommand(0x40 + 8*index);
+    
+    for(i = 0; i < 8; i++){
+        LCD_WriteData(icon[i]);
+    }
+}

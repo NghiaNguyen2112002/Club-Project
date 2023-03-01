@@ -9,14 +9,20 @@
 #include "fsm.h"
 
 
+#define TEST_ICON           0
 
-
-unsigned char count = 0;
+unsigned char alarm_1[] = {0x00,0x00,0x00,0x01,0x02,0x02,0x02,0x02};
+unsigned char alarm_2[] = {0x04,0x0A,0x1F,0x00,0x00,0x00,0x00,0x00};
+unsigned char alarm_3[] = {0x00,0x00,0x00,0x10,0x08,0x08,0x08,0x08};
+unsigned char alarm_4[] = {0x02,0x02,0x04,0x08,0x0F,0x00,0x00,0x00};
+unsigned char alarm_5[] = {0x00,0x00,0x00,0x00,0x1F,0x11,0x0E,0x00};
+unsigned char alarm_6[] = {0x08,0x08,0x04,0x02,0x1E,0x00,0x00,0x00};
 
 
 void SYS_Init(void);
 void SetupTimeForFirstProgram(void);
 void RTC_GetDateTime(void);
+void Create_AlarmIcon(void);
 
 
 void Delay_ms(int value);
@@ -29,28 +35,34 @@ void main(void) {
     LCD_PrintStringBuffer(0, 0, "  SMART  CLOCK  ");
     LCD_DisplayScreen();
     Delay_ms(2000);
+    Create_AlarmIcon();
     
     LCD_ClearBuffer();
+    Delay_ms(1000);
+    
+    LCD_PrintCharBuffer(0, 6, 0);
+    LCD_PrintCharBuffer(0, 7, 1);
+    LCD_PrintCharBuffer(0, 8, 2);
+    LCD_PrintCharBuffer(1, 6, 3);
+    LCD_PrintCharBuffer(1, 7, 4);
+    LCD_PrintCharBuffer(1, 8, 5);
+    LCD_DisplayScreen();
+    Delay_ms(2000);
     
     while(1){
+        while(!flag_timer3);
+        flag_timer3 = 0;
+        
+        KEY_Reading();     
+        
+        
+        if(_counterTimeOut >= 50) _counterTimeOut -= 50;
+        if(_counterEvery_ms >= 50) _counterEvery_ms -= 50;
+        
+        if(_flagGetTime) RTC_GetDateTime();
+        
         FSM_AlarmControl();
-        if(flag_timer0){
-            flag_timer0 = 0;
-            _flagEverySec = 1;
-            
-            if(_counterTimeOut > 0) _counterTimeOut--;
-        }
-        if(flag_timer1){
-            flag_timer1 = 0;
-            KEY_Reading();            
-        }
-        if(flag_timer3){
-            flag_timer3 = 0;
-            
-            if(_flagGetTime) RTC_GetDateTime();
-            LCD_DisplayScreen();
-            if(_counterEvery_ms > 0) _counterEvery_ms -= 50;
-        }
+        LCD_DisplayScreen();
     }
     
     return;
@@ -64,12 +76,12 @@ void SYS_Init(void){
     I2C_Init();
     FSM_Init();
 //    timer clock is 1Mhz
-    TMR0_Init(4695);            //1ms
-    TMR1_Init(9390);            //2ms
+//    TMR0_Init(4695);            //1ms
+//    TMR1_Init(9390);            //2ms
     TMR3_Init(46950);           //10ms
 
-    TMR0_SetTime_ms(1000);      //1s
-    TMR1_SetTime_ms(10);        //10ms
+//    TMR0_SetTime_ms(1000);      //1s
+//    TMR1_SetTime_ms(10);        //10ms
     TMR3_SetTime_ms(50);        //50ms
 }
 
@@ -109,6 +121,14 @@ void RTC_GetDateTime(void){
 
 }
 
+void Create_AlarmIcon(void){
+    LCD_CreateChar(0, alarm_1);
+    LCD_CreateChar(1, alarm_2);
+    LCD_CreateChar(2, alarm_3);
+    LCD_CreateChar(3, alarm_4);
+    LCD_CreateChar(4, alarm_5);
+    LCD_CreateChar(5, alarm_6);
+}
 
 void Delay_ms(int value)
 {
