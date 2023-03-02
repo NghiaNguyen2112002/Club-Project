@@ -42,7 +42,6 @@ unsigned char KEY_IsPressed(unsigned char index){
     if(index > NO_OF_BUTTONS) return 0;
 
     result = FlagForButtonPress[index];
-    FlagForButtonPress[index] = 0;
     return result;
 }
 unsigned char KEY_IsPressed_ms(unsigned char index, unsigned int duration){

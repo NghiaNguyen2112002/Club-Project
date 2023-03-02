@@ -13,12 +13,12 @@
 #include "lcd.h"
 #include "global.h"
 #include "i2c_ds1307.h"
-
+#include "button_matrix.h"
 
 //  [DEC]       [MODE]       [INC]
-#define DEC_BUTTON                  4
-#define MODE_BUTTON                 5
-#define INC_BUTTON                  6
+#define DEC_BUTTON                  5
+#define MODE_BUTTON                 9
+#define INC_BUTTON                  13
 
 #define INDEX_HOUR_LCD              0
 #define INDEX_MIN_LCD               3
@@ -30,6 +30,7 @@
 
 #define TIME_OUT_FOR_ADJUSTMENT     15000          //15s
 #define TIME_OUT_ALARM_GO_OFF       30000          //30s
+#define TIME_FRAME_RING_ANIMATION   300             //300ms
 
 enum Mode {INIT, NORMAL_DISPLAY, 
             ADJUST_TIME, ADJUST_MIN, ADJUST_HOUR,

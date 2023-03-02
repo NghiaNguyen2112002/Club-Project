@@ -1,5 +1,5 @@
 #include "fsm.h"
-#include "button_matrix.h"
+
 
 enum Mode mode;
 
@@ -7,6 +7,24 @@ unsigned char temp;
 
 void FSM_Init(void){
     mode = INIT;
+}
+
+void LCD_CreateAlarmNormal(void){
+    LCD_CreateChar(0, alarm_1);
+    LCD_CreateChar(1, alarm_2);
+    LCD_CreateChar(2, alarm_3);
+    LCD_CreateChar(3, alarm_4);
+    LCD_CreateChar(4, alarm_5);
+    LCD_CreateChar(5, alarm_6);
+}
+
+void LCD_CreateAlarmRing(void){
+    LCD_CreateChar(0, alarm_ring_1);
+    LCD_CreateChar(1, alarm_ring_2);
+    LCD_CreateChar(2, alarm_ring_3);
+    LCD_CreateChar(3, alarm_ring_4);
+    LCD_CreateChar(4, alarm_ring_5);
+    LCD_CreateChar(5, alarm_ring_6); 
 }
 
 void PrintWeekDay(unsigned char week_day){
@@ -381,6 +399,24 @@ void FSM_AlarmControl(void){
 
             break;
             case ALARM_GO_OFF:
+                if(_counterFrameAnimation == 0){
+                    _counterFrameAnimation = TIME_FRAME_RING_ANIMATION;
+                    if(_flagFrameAnimation){
+                        _flagFrameAnimation = 0;
+                        LCD_CreateAlarmNormal();
+                    }
+                    else if(!_flagFrameAnimation){
+                        _flagFrameAnimation = 1;
+                        LCD_CreateAlarmRing();
+                    }
+                }
+                
+                LCD_PrintCharBuffer(0, 6, 0);
+                LCD_PrintCharBuffer(0, 7, 1);
+                LCD_PrintCharBuffer(0, 8, 2);
+                LCD_PrintCharBuffer(1, 6, 3);
+                LCD_PrintCharBuffer(1, 7, 4);
+                LCD_PrintCharBuffer(1, 8, 5);
                 if(KEY_IsPressed(MODE_BUTTON) || _counterTimeOut == 0) mode = INIT;
             break;
         default:

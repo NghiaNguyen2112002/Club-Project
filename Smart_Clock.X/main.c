@@ -11,12 +11,7 @@
 
 #define TEST_ICON           0
 
-unsigned char alarm_1[] = {0x00,0x00,0x00,0x01,0x02,0x02,0x02,0x02};
-unsigned char alarm_2[] = {0x04,0x0A,0x1F,0x00,0x00,0x00,0x00,0x00};
-unsigned char alarm_3[] = {0x00,0x00,0x00,0x10,0x08,0x08,0x08,0x08};
-unsigned char alarm_4[] = {0x02,0x02,0x04,0x08,0x0F,0x00,0x00,0x00};
-unsigned char alarm_5[] = {0x00,0x00,0x00,0x00,0x1F,0x11,0x0E,0x00};
-unsigned char alarm_6[] = {0x08,0x08,0x04,0x02,0x1E,0x00,0x00,0x00};
+
 
 
 void SYS_Init(void);
@@ -46,6 +41,7 @@ void main(void) {
     LCD_PrintCharBuffer(1, 6, 3);
     LCD_PrintCharBuffer(1, 7, 4);
     LCD_PrintCharBuffer(1, 8, 5);
+    
     LCD_DisplayScreen();
     Delay_ms(2000);
     
@@ -58,6 +54,7 @@ void main(void) {
         
         if(_counterTimeOut >= 50) _counterTimeOut -= 50;
         if(_counterEvery_ms >= 50) _counterEvery_ms -= 50;
+        if(_counterFrameAnimation >= 50) _counterFrameAnimation -= 50;
         
         if(_flagGetTime) RTC_GetDateTime();
         

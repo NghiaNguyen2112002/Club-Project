@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Feb 26 21:40:10 2023
+Linker Map File - Created Thu Mar 02 15:51:54 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,19 +7,20 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                _entry_scn       code   0x000000    program   0x000006
            .code___init.o       code   0x000006    program   0x000002
       InterruptVectorHigh       code   0x000008    program   0x000006
-    .idata_i2c_ds1307.o_i    romdata   0x00000e    program   0x000000
-    .romdata_i2c_ds1307.o    romdata   0x00000e    program   0x000000
-           .idata_fsm.o_i    romdata   0x00000e    program   0x000000
-           .romdata_fsm.o    romdata   0x00000e    program   0x000000
-        .romdata_global.o    romdata   0x00000e    program   0x000000
-      .idata_fxd0808u.o_i    romdata   0x00000e    program   0x000000
-      .romdata_fxd0808u.o    romdata   0x00000e    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
+         .romdata_timer.o    romdata   0x00000e    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x00000e    program   0x000000
+          .idata_main.o_i    romdata   0x00000e    program   0x000000
           .romdata_main.o    romdata   0x00000e    program   0x000000
       .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
-      .idata_fxd2424u.o_i    romdata   0x00000e    program   0x000000
-         .romdata_timer.o    romdata   0x00000e    program   0x000000
-      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
+      .romdata_fxd0808u.o    romdata   0x00000e    program   0x000000
+      .idata_fxd0808u.o_i    romdata   0x00000e    program   0x000000
+        .romdata_global.o    romdata   0x00000e    program   0x000000
+           .romdata_fsm.o    romdata   0x00000e    program   0x000000
+           .idata_fsm.o_i    romdata   0x00000e    program   0x000000
+    .romdata_i2c_ds1307.o    romdata   0x00000e    program   0x000000
+    .idata_i2c_ds1307.o_i    romdata   0x00000e    program   0x000000
       .idata_fxd3232u.o_i    romdata   0x00000e    program   0x000000
            .romdata_lcd.o    romdata   0x00000e    program   0x000000
       .romdata_fxd3232u.o    romdata   0x00000e    program   0x000000
@@ -34,27 +35,26 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
            .code_global.o       code   0x000016    program   0x000000
             .code_c018i.o       code   0x000016    program   0x000000
        InterruptVectorLow       code   0x000018    program   0x000006
-                   .cinit    romdata   0x00001e    program   0x00003e
-              .code_fsm.o       code   0x00005c    program   0x0006ce
-              .code_lcd.o       code   0x00072a    program   0x000516
-             .code_main.o       code   0x000c40    program   0x0002b6
-            .code_timer.o       code   0x000ef6    program   0x000288
-    .code_button_matrix.o       code   0x00117e    program   0x000194
-       .code_i2c_ds1307.o       code   0x001312    program   0x000176
-        .code_interrupt.o       code   0x001488    program   0x000152
-             .stringtable    romdata   0x0015da    program   0x0000ba
-               _cinit_scn       code   0x001694    program   0x00009e
-                     PROG       code   0x001732    program   0x00005a
-         .code_fxd3232u.o       code   0x00178c    program   0x000048
-         .code_fxd2424u.o       code   0x0017d4    program   0x00003a
-         .code_fxd1616u.o       code   0x00180e    program   0x00002c
-                    .code       code   0x00183a    program   0x000020
-             _startup_scn       code   0x00185a    program   0x00001c
-         .code_fxd0808u.o       code   0x001876    program   0x00001c
-         .idata_timer.o_i    romdata   0x001892    program   0x000018
-          .idata_main.o_i    romdata   0x0018aa    program   0x000030
-           .idata_lcd.o_i    romdata   0x0018da    program   0x000020
-        .idata_global.o_i    romdata   0x0018fa    program   0x000010
+                   .cinit    romdata   0x00001e    program   0x000032
+              .code_fsm.o       code   0x000050    program   0x0007dc
+              .code_lcd.o       code   0x00082c    program   0x000516
+             .code_main.o       code   0x000d42    program   0x0002ca
+            .code_timer.o       code   0x00100c    program   0x000288
+    .code_button_matrix.o       code   0x001294    program   0x00018e
+       .code_i2c_ds1307.o       code   0x001422    program   0x000176
+        .code_interrupt.o       code   0x001598    program   0x000152
+             .stringtable    romdata   0x0016ea    program   0x0000ba
+               _cinit_scn       code   0x0017a4    program   0x00009e
+                     PROG       code   0x001842    program   0x00005a
+         .code_fxd3232u.o       code   0x00189c    program   0x000048
+         .code_fxd2424u.o       code   0x0018e4    program   0x00003a
+         .code_fxd1616u.o       code   0x00191e    program   0x00002c
+                    .code       code   0x00194a    program   0x000020
+             _startup_scn       code   0x00196a    program   0x00001c
+         .code_fxd0808u.o       code   0x001986    program   0x00001c
+         .idata_timer.o_i    romdata   0x0019a2    program   0x000018
+           .idata_lcd.o_i    romdata   0x0019ba    program   0x000020
+        .idata_global.o_i    romdata   0x0019da    program   0x000073
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -68,35 +68,35 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
     .config_30000d_main.o    romdata   0x30000d    program   0x000001
                 MATH_DATA      udata   0x000000       data   0x000010
                  .tmpdata      udata   0x000010       data   0x000009
-   .udata_button_matrix.o      udata   0x000080       data   0x000030
-            .idata_main.o      idata   0x0000b0       data   0x000030
-             .idata_lcd.o      idata   0x0000e0       data   0x000020
+          .idata_global.o      idata   0x000080       data   0x000073
+           .udata_c018i.o      udata   0x0000f3       data   0x00000a
+             .udata_fsm.o      udata   0x0000fd       data   0x000002
+      .udata_i2c_ds1307.o      udata   0x0000ff       data   0x000001
                    .stack      udata   0x000e00       data   0x000100
-           .idata_timer.o      idata   0x000f00       data   0x000018
-          .idata_global.o      idata   0x000f18       data   0x000010
-           .udata_c018i.o      udata   0x000f28       data   0x00000a
-   .idata_button_matrix.o      idata   0x000f32       data   0x000008
-           .udata_timer.o      udata   0x000f3a       data   0x000004
-             .udata_lcd.o      udata   0x000f3e       data   0x000004
-             .udata_fsm.o      udata   0x000f42       data   0x000002
-      .udata_i2c_ds1307.o      udata   0x000f44       data   0x000001
-       .udata_interrupt.o      udata   0x000f45       data   0x000000
-          .idata___init.o      idata   0x000f45       data   0x000000
-          .udata___init.o      udata   0x000f45       data   0x000000
-        .idata_fxd3232u.o      idata   0x000f45       data   0x000000
-        .udata_fxd3232u.o      udata   0x000f45       data   0x000000
-        .idata_fxd2424u.o      idata   0x000f45       data   0x000000
-        .udata_fxd2424u.o      udata   0x000f45       data   0x000000
-        .idata_fxd1616u.o      idata   0x000f45       data   0x000000
-        .udata_fxd1616u.o      udata   0x000f45       data   0x000000
-        .idata_fxd0808u.o      idata   0x000f45       data   0x000000
-        .udata_fxd0808u.o      udata   0x000f45       data   0x000000
-       .idata_interrupt.o      idata   0x000f45       data   0x000000
-          .udata_global.o      udata   0x000f45       data   0x000000
-             .idata_fsm.o      idata   0x000f45       data   0x000000
-      .idata_i2c_ds1307.o      idata   0x000f45       data   0x000000
-           .idata_c018i.o      idata   0x000f45       data   0x000000
-            .udata_main.o      udata   0x000f45       data   0x000000
+   .udata_button_matrix.o      udata   0x000f00       data   0x000030
+             .idata_lcd.o      idata   0x000f30       data   0x000020
+           .idata_timer.o      idata   0x000f50       data   0x000018
+   .idata_button_matrix.o      idata   0x000f68       data   0x000008
+           .udata_timer.o      udata   0x000f70       data   0x000004
+             .udata_lcd.o      udata   0x000f74       data   0x000004
+          .idata___init.o      idata   0x000f78       data   0x000000
+          .udata___init.o      udata   0x000f78       data   0x000000
+        .idata_fxd3232u.o      idata   0x000f78       data   0x000000
+        .udata_fxd3232u.o      udata   0x000f78       data   0x000000
+        .idata_fxd2424u.o      idata   0x000f78       data   0x000000
+        .udata_fxd2424u.o      udata   0x000f78       data   0x000000
+        .idata_fxd1616u.o      idata   0x000f78       data   0x000000
+        .udata_fxd1616u.o      udata   0x000f78       data   0x000000
+        .idata_fxd0808u.o      idata   0x000f78       data   0x000000
+        .udata_fxd0808u.o      udata   0x000f78       data   0x000000
+           .idata_c018i.o      idata   0x000f78       data   0x000000
+          .udata_global.o      udata   0x000f78       data   0x000000
+             .idata_fsm.o      idata   0x000f78       data   0x000000
+       .udata_interrupt.o      udata   0x000f78       data   0x000000
+      .idata_i2c_ds1307.o      idata   0x000f78       data   0x000000
+       .idata_interrupt.o      idata   0x000f78       data   0x000000
+            .idata_main.o      idata   0x000f78       data   0x000000
+            .udata_main.o      udata   0x000f78       data   0x000000
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
 
@@ -105,98 +105,100 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000015      
-                            0x000018    0x001909      
+                            0x000018    0x001a4c      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            6419 out of 66584 program addresses used, program memory utilization is 9%
+            6742 out of 66584 program addresses used, program memory utilization is 10%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-               BCD_To_DEC   0x001312    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-         Create_AlarmIcon   0x000dbe    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                   D2424S   0x00175c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x00176a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001766    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001782    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x001748    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-               DEC_To_BCD   0x001336    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 Delay_ms   0x000e10    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-            Delay_virtual   0x000750    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-              DisplayTime   0x0000ca    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-         FSM_AlarmControl   0x0000ec    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                 FSM_Init   0x00005c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                 FXD0808U   0x001876    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                 FXD1616U   0x00180e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD2424S   0x001732    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x0017d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                 FXD3232U   0x00178c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 I2C_Init   0x001356    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 I2C_Read   0x001392    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-           I2C_ReadDS1307   0x0013ec    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                I2C_Start   0x00136e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 I2C_Stop   0x001378    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                I2C_Write   0x001382    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-          I2C_WriteDS1307   0x00139e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 INT_Init   0x001488    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+               BCD_To_DEC   0x001422    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+         Create_AlarmIcon   0x000ed4    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                   D2424S   0x00186c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x00187a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x001892    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+               DEC_To_BCD   0x001446    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 Delay_ms   0x000f26    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+            Delay_virtual   0x000852    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+              DisplayTime   0x00014a    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+         FSM_AlarmControl   0x00016c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                 FSM_Init   0x000050    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                 FXD0808U   0x001986    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                 FXD1616U   0x00191e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x001842    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x0018e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 FXD3232U   0x00189c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 I2C_Init   0x001466    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 I2C_Read   0x0014a2    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+           I2C_ReadDS1307   0x0014fc    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                I2C_Start   0x00147e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 I2C_Stop   0x001488    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                I2C_Write   0x001492    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+          I2C_WriteDS1307   0x0014ae    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 INT_Init   0x001598    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
       InterruptVectorHigh   0x000008    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
        InterruptVectorLow   0x000018    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                 KEY_Init   0x00117e    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-            KEY_IsPressed   0x001264    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-         KEY_IsPressed_ms   0x001288    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-              KEY_IsStuck   0x00124e    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-              KEY_Reading   0x001186    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-          LCD_ClearBuffer   0x00083a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-           LCD_CreateChar   0x000ad0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                LCD_Delay   0x00072a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-        LCD_DisplayScreen   0x000a86    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                 LCD_Init   0x0007d8    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-      LCD_PrintCharBuffer   0x0008c0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-       LCD_PrintNumBuffer   0x0008e2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-    LCD_PrintStringBuffer   0x000a32    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-   LCD_PrintStringBufferL   0x000a5a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-          LCD_SendCommand   0x0007c6    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-            LCD_SetCursor   0x000816    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-     LCD_UpdateCharBuffer   0x00089a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-           LCD_Write4bits   0x0007a0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-         LCD_WriteCommand   0x0007c0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-            LCD_WriteData   0x0007ba    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-             PrintWeekDay   0x000062    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-          RTC_GetDateTime   0x000d68    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                 SYS_Init   0x000ce8    program     extern E:\PIC\Club\Smart_Clock.X\main.c
- SetupTimeForFirstProgram   0x000d1c    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                TMR0_Init   0x000ef6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR0_Isr   0x000fce    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR0_SetTime_ms   0x001046    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR0_Start   0x000f9a    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR0_Stop   0x000fbe    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR1_Init   0x000f18    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR1_Isr   0x000fec    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR1_SetTime_ms   0x001060    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR1_Start   0x000fa0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR1_Stop   0x000fc2    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR2_Init   0x000f40    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR2_Isr   0x00100a    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR2_SetTime_ms   0x00108c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR2_Start   0x000fa6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR2_Stop   0x000fc6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR3_Init   0x000f60    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR3_Isr   0x001028    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR3_SetTime_ms   0x0010a6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR3_Start   0x000fae    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR3_Stop   0x000fca    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-       ___return_lbl00000   0x0017d2    program     static                          
+                 KEY_Init   0x001294    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+            KEY_IsPressed   0x00137a    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+         KEY_IsPressed_ms   0x001398    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+              KEY_IsStuck   0x001364    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+              KEY_Reading   0x00129c    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+          LCD_ClearBuffer   0x00093c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+    LCD_CreateAlarmNormal   0x000056    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+      LCD_CreateAlarmRing   0x00009c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+           LCD_CreateChar   0x000bd2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+                LCD_Delay   0x00082c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+        LCD_DisplayScreen   0x000b88    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+                 LCD_Init   0x0008da    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+      LCD_PrintCharBuffer   0x0009c2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+       LCD_PrintNumBuffer   0x0009e4    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+    LCD_PrintStringBuffer   0x000b34    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+   LCD_PrintStringBufferL   0x000b5c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+          LCD_SendCommand   0x0008c8    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+            LCD_SetCursor   0x000918    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+     LCD_UpdateCharBuffer   0x00099c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+           LCD_Write4bits   0x0008a2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+         LCD_WriteCommand   0x0008c2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+            LCD_WriteData   0x0008bc    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+             PrintWeekDay   0x0000e2    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+          RTC_GetDateTime   0x000e7e    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                 SYS_Init   0x000dfe    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+ SetupTimeForFirstProgram   0x000e32    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                TMR0_Init   0x00100c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR0_Isr   0x0010e4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR0_SetTime_ms   0x00115c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR0_Start   0x0010b0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR0_Stop   0x0010d4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR1_Init   0x00102e    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR1_Isr   0x001102    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR1_SetTime_ms   0x001176    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR1_Start   0x0010b6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR1_Stop   0x0010d8    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR2_Init   0x001056    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR2_Isr   0x001120    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR2_SetTime_ms   0x0011a2    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR2_Start   0x0010bc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR2_Stop   0x0010dc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR3_Init   0x001076    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR3_Isr   0x00113e    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR3_SetTime_ms   0x0011bc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR3_Start   0x0010c4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR3_Stop   0x0010e0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+       ___return_lbl00000   0x001948    program     static                          
+       ___return_lbl00000   0x0018e2    program     static                          
+       ___return_lbl00000   0x0019a0    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x001838    program     static                          
-       ___return_lbl00000   0x001890    program     static                          
-       ___return_lbl00000   0x00180c    program     static                          
+       ___return_lbl00000   0x00191c    program     static                          
+       ___return_lbl00001   0x001984    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00001   0x001874    program     static                          
+       ___return_lbl00002   0x001840    program     static                          
        ___return_lbl00002   0x00000c    program     static                          
-       ___return_lbl00002   0x001730    program     static                          
                __config_0   0x300001    program     static E:\PIC\Club\Smart_Clock.X\main.c
                __config_1   0x300002    program     static E:\PIC\Club\Smart_Clock.X\main.c
               __config_10   0x30000d    program     static E:\PIC\Club\Smart_Clock.X\main.c
@@ -209,136 +211,142 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                __config_8   0x30000b    program     static E:\PIC\Club\Smart_Clock.X\main.c
                __config_9   0x30000c    program     static E:\PIC\Club\Smart_Clock.X\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x000b0a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_0   0x001560    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_0   0x001442    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_0   0x000e98    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_0   0x0010da    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_0   0x0005c8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_0   0x0012ce    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_1   0x000b14    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_1   0x00158a    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_1   0x0005d0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_1   0x00144a    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_1   0x000ea0    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_1   0x0012e2    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_1   0x001106    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                  __pa_10   0x000636    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_10   0x000bae    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_11   0x00063e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_11   0x000bc6    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_12   0x000646    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_12   0x000bda    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_13   0x000bea    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_13   0x00064e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_14   0x000bf8    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_14   0x00066c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_15   0x000c14    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_15   0x000676    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_16   0x000688    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_16   0x000c1e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_17   0x000c2a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_17   0x00069a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_18   0x000c36    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_18   0x0006ac    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_19   0x0006b2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_2   0x0012f0    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_2   0x001454    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_2   0x0005dc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_2   0x0015b0    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_2   0x001116    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_2   0x000b1e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_2   0x000eaa    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                  __pa_20   0x0006be    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_21   0x0006d0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_22   0x0006e2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_23   0x0006ec    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_24   0x0006f2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_25   0x0006f8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_26   0x0006fe    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_27   0x00070c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_28   0x000716    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_29   0x000724    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_3   0x001120    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_3   0x0005ea    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_3   0x000eb8    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_3   0x00145c    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_3   0x0012fa    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_3   0x000b26    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_3   0x0015be    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_4   0x0005f6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_4   0x001302    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_4   0x000ec4    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_4   0x0015cc    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_4   0x000b3e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_4   0x00146e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_4   0x001128    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_5   0x000ed8    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_5   0x00130c    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_5   0x000b58    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_5   0x00147e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_5   0x000604    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_5   0x001130    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_6   0x000ee4    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_6   0x000608    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_6   0x001148    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_6   0x000b66    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_7   0x000eee    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_7   0x001156    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_7   0x000614    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_7   0x000b80    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_8   0x001164    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_8   0x000b8e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_8   0x000622    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_9   0x000b96    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_9   0x00062a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_9   0x001172    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-               __string_0   0x0015da    program     static E:\PIC\Club\Smart_Clock.X\main.c
-               __string_0   0x001690    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_1   0x00168c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_10   0x001650    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_11   0x00164c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_12   0x00163b    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_13   0x00162a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_14   0x001619    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_15   0x001608    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_16   0x001605    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_17   0x001601    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_18   0x0015fc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_19   0x0015eb    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_2   0x001688    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_3   0x001684    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_4   0x001680    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_5   0x00167c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_6   0x001678    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_7   0x001675    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_8   0x001664    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_9   0x001653    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-            __zero_memory   0x00183a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x001694    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __pa_0   0x000fae    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_0   0x0011f0    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_0   0x000c0c    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_0   0x001552    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_0   0x0013de    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_0   0x001670    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_0   0x00069e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_1   0x00169a    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_1   0x00155a    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_1   0x0013f2    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_1   0x00121c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_1   0x0006a6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_1   0x000c16    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_1   0x000fb6    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                  __pa_10   0x000702    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_10   0x000cb0    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_11   0x00070e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_11   0x000cc8    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_12   0x000714    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_12   0x000cdc    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_13   0x00071c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_13   0x000cec    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_14   0x000cfa    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_14   0x000724    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_15   0x000d16    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_15   0x00072e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_16   0x000d20    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_16   0x000736    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_17   0x000d2c    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_17   0x000754    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_18   0x00075e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_18   0x000d38    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_19   0x000770    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_2   0x0016c0    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_2   0x0013fc    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_2   0x001564    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_2   0x0006b2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_2   0x00122c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_2   0x000c20    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_2   0x000fc0    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                  __pa_20   0x000782    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_21   0x000794    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_22   0x00079a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_23   0x0007a6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_24   0x0007b8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_25   0x0007ca    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_26   0x0007d4    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_27   0x0007da    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_28   0x0007e0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_29   0x0007e6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_3   0x001404    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_3   0x0006c0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_3   0x001236    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_3   0x000fce    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_3   0x000c28    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_3   0x00156c    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_3   0x0016ce    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                  __pa_30   0x0007f0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_31   0x0007f8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_32   0x000806    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_33   0x00080e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_34   0x000818    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_35   0x000826    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_4   0x0016dc    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_4   0x000c40    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_4   0x000fda    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_4   0x0006cc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_4   0x00157e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_4   0x001412    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_4   0x00123e    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_5   0x0006d4    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_5   0x000c5a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_5   0x00158e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_5   0x000fee    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_5   0x001246    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_5   0x00141c    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_6   0x0006dc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_6   0x000ffa    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_6   0x000c68    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_6   0x00125e    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_7   0x0006e0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_7   0x00126c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_7   0x001004    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_7   0x000c82    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_8   0x00127a    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_8   0x0006ec    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_8   0x000c90    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_9   0x001288    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_9   0x0006fa    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_9   0x000c98    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+               __string_0   0x0016ea    program     static E:\PIC\Club\Smart_Clock.X\main.c
+               __string_0   0x0017a0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_1   0x00179c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_10   0x001760    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_11   0x00175c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_12   0x00174b    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_13   0x00173a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_14   0x001729    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_15   0x001718    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_16   0x001715    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_17   0x001711    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_18   0x00170c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_19   0x0016fb    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_2   0x001798    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_3   0x001794    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_4   0x001790    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_5   0x00178c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_6   0x001788    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_7   0x001785    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_8   0x001774    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_9   0x001763    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+            __zero_memory   0x00194a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x0017a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x0017ce    program     static                          
-                   _false   0x001808    program     static                          
-                 _startup   0x00185a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x001850    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x001706    program     static                          
-            copy_one_byte   0x00170c    program     static                          
-                     done   0x001730    program     static                          
-             done_copying   0x00171a    program     static                          
-                  endloop   0x00188c    program     static                          
-                  endloop   0x001834    program     static                          
-                 high_isr   0x001502    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                     loop   0x00179a    program     static                          
-                     loop   0x00186a    program     static                          
-                     loop   0x0017e0    program     static                          
-                     loop   0x001818    program     static                          
-                     loop   0x00187e    program     static                          
-                   loop_h   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001852    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  low_isr   0x001490    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                     main   0x000c40    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                     test   0x0016ae    program     static                          
-               zero_block   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   _false   0x0018de    program     static                          
+                   _false   0x001918    program     static                          
+                 _startup   0x00196a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x001960    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x001816    program     static                          
+            copy_one_byte   0x00181c    program     static                          
+                     done   0x001840    program     static                          
+             done_copying   0x00182a    program     static                          
+                  endloop   0x00199c    program     static                          
+                  endloop   0x001944    program     static                          
+                 high_isr   0x001612    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+                     loop   0x0018aa    program     static                          
+                     loop   0x00197a    program     static                          
+                     loop   0x0018f0    program     static                          
+                     loop   0x001928    program     static                          
+                     loop   0x00198e    program     static                          
+                   loop_h   0x001958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001962    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x0015a0    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+                     main   0x000d42    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                     test   0x0017be    program     static                          
+               zero_block   0x001958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -367,7 +375,7 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-    CounterForButtonPress   0x000090       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+    CounterForButtonPress   0x000f10       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -395,7 +403,7 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-       FlagForButtonPress   0x000080       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+       FlagForButtonPress   0x000f00       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
                   HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -423,13 +431,13 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                LcdScreen   0x0000e0       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-               MUL_timer0   0x000f10       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer1   0x000f12       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer2   0x000f14       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer3   0x000f16       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-        MaskInputOfButton   0x000f36       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-       MaskOutputOfButton   0x000f32       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                LcdScreen   0x000f30       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+               MUL_timer0   0x000f60       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer1   0x000f62       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer2   0x000f64       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer3   0x000f66       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+        MaskInputOfButton   0x000f6c       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+       MaskOutputOfButton   0x000f68       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -555,53 +563,61 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\main.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\timer.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\timer.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\main.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\fsm.c
-         _counterEvery_ms   0x000f26       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-          _counterTimeOut   0x000f24       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                    _date   0x000f1c       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-               _flagAlarm   0x000f21       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-         _flagBlinkCursor   0x000f22       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-             _flagGetTime   0x000f23       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                    _hour   0x000f18       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-               _hourAlarm   0x000f1f       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                  _minute   0x000f19       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-             _minuteAlarm   0x000f20       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                   _month   0x000f1d       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                  _second   0x000f1a       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                _week_day   0x000f1b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                    _year   0x000f1e       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                  ack_bit   0x000f44       data     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                  alarm_1   0x0000b0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_2   0x0000b8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_3   0x0000c0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_4   0x0000c8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_5   0x0000d0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_6   0x0000d8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-           counter_timer0   0x000f08       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer1   0x000f0a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer2   0x000f0c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer3   0x000f0e       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                curr_byte   0x000f2b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000f2d       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              current_col   0x000f40       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-              current_row   0x000f3e       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                 data_ptr   0x000f2f       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              flag_timer0   0x000f3a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer1   0x000f3b       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer2   0x000f3c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer3   0x000f3d       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                     mode   0x000f42       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                     prom   0x000f28       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     temp   0x000f43       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-             value_timer0   0x000f00       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer1   0x000f02       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer2   0x000f04       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer3   0x000f06       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+         _counterEvery_ms   0x00008f       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+   _counterFrameAnimation   0x000091       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+          _counterTimeOut   0x00008d       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                    _date   0x000084       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+               _flagAlarm   0x000089       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+         _flagBlinkCursor   0x00008a       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+      _flagFrameAnimation   0x00008c       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             _flagGetTime   0x00008b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                    _hour   0x000080       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+               _hourAlarm   0x000087       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  _minute   0x000081       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             _minuteAlarm   0x000088       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                   _month   0x000085       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  _second   0x000082       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                _week_day   0x000083       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                    _year   0x000086       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  ack_bit   0x0000ff       data     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                  alarm_1   0x000093       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_2   0x00009b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_3   0x0000a3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_4   0x0000ab       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_5   0x0000b3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_6   0x0000bb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_1   0x0000c3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_2   0x0000cb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_3   0x0000d3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_4   0x0000db       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_5   0x0000e3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_6   0x0000eb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+           counter_timer0   0x000f58       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer1   0x000f5a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer2   0x000f5c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer3   0x000f5e       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                curr_byte   0x0000f6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              current_col   0x000f76       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+              current_row   0x000f74       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+                 data_ptr   0x0000fa       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              flag_timer0   0x000f70       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer1   0x000f71       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer2   0x000f72       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer3   0x000f73       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                     mode   0x0000fd       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                     prom   0x0000f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     temp   0x0000fe       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+             value_timer0   0x000f50       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer1   0x000f52       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer2   0x000f54       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer3   0x000f56       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
 
 
 
@@ -615,211 +631,219 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
        ___return_lbl00002   0x00000c    program     static                          
        InterruptVectorLow   0x000018    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
        ___return_lbl00001   0x00001c    program     static                          
-                 FSM_Init   0x00005c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-             PrintWeekDay   0x000062    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-              DisplayTime   0x0000ca    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-         FSM_AlarmControl   0x0000ec    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_0   0x0005c8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_1   0x0005d0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_2   0x0005dc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_3   0x0005ea    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_4   0x0005f6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_5   0x000604    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_6   0x000608    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_7   0x000614    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_8   0x000622    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                   __pa_9   0x00062a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_10   0x000636    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_11   0x00063e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_12   0x000646    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_13   0x00064e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_14   0x00066c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_15   0x000676    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_16   0x000688    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_17   0x00069a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_18   0x0006ac    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_19   0x0006b2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_20   0x0006be    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_21   0x0006d0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_22   0x0006e2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_23   0x0006ec    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_24   0x0006f2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_25   0x0006f8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_26   0x0006fe    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_27   0x00070c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_28   0x000716    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                  __pa_29   0x000724    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                LCD_Delay   0x00072a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-            Delay_virtual   0x000750    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-           LCD_Write4bits   0x0007a0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-            LCD_WriteData   0x0007ba    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-         LCD_WriteCommand   0x0007c0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-          LCD_SendCommand   0x0007c6    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                 LCD_Init   0x0007d8    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-            LCD_SetCursor   0x000816    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-          LCD_ClearBuffer   0x00083a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-     LCD_UpdateCharBuffer   0x00089a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-      LCD_PrintCharBuffer   0x0008c0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-       LCD_PrintNumBuffer   0x0008e2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-    LCD_PrintStringBuffer   0x000a32    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-   LCD_PrintStringBufferL   0x000a5a    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-        LCD_DisplayScreen   0x000a86    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-           LCD_CreateChar   0x000ad0    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_0   0x000b0a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_1   0x000b14    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_2   0x000b1e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_3   0x000b26    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_4   0x000b3e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_5   0x000b58    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_6   0x000b66    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_7   0x000b80    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_8   0x000b8e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                   __pa_9   0x000b96    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_10   0x000bae    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_11   0x000bc6    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_12   0x000bda    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_13   0x000bea    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_14   0x000bf8    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_15   0x000c14    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_16   0x000c1e    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_17   0x000c2a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                  __pa_18   0x000c36    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
-                     main   0x000c40    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                 SYS_Init   0x000ce8    program     extern E:\PIC\Club\Smart_Clock.X\main.c
- SetupTimeForFirstProgram   0x000d1c    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-          RTC_GetDateTime   0x000d68    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-         Create_AlarmIcon   0x000dbe    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                 Delay_ms   0x000e10    program     extern E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_0   0x000e98    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_1   0x000ea0    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_2   0x000eaa    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_3   0x000eb8    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_4   0x000ec4    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_5   0x000ed8    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_6   0x000ee4    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                   __pa_7   0x000eee    program     static E:\PIC\Club\Smart_Clock.X\main.c
-                TMR0_Init   0x000ef6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR1_Init   0x000f18    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR2_Init   0x000f40    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR3_Init   0x000f60    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR0_Start   0x000f9a    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR1_Start   0x000fa0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR2_Start   0x000fa6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               TMR3_Start   0x000fae    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR0_Stop   0x000fbe    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR1_Stop   0x000fc2    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR2_Stop   0x000fc6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                TMR3_Stop   0x000fca    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR0_Isr   0x000fce    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR1_Isr   0x000fec    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR2_Isr   0x00100a    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                 TMR3_Isr   0x001028    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR0_SetTime_ms   0x001046    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR1_SetTime_ms   0x001060    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR2_SetTime_ms   0x00108c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-          TMR3_SetTime_ms   0x0010a6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_0   0x0010da    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_1   0x001106    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_2   0x001116    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_3   0x001120    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_4   0x001128    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_5   0x001130    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_6   0x001148    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_7   0x001156    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_8   0x001164    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                   __pa_9   0x001172    program     static E:\PIC\Club\Smart_Clock.X\timer.c
-                 KEY_Init   0x00117e    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-              KEY_Reading   0x001186    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-              KEY_IsStuck   0x00124e    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-            KEY_IsPressed   0x001264    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-         KEY_IsPressed_ms   0x001288    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_0   0x0012ce    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_1   0x0012e2    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_2   0x0012f0    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_3   0x0012fa    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_4   0x001302    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                   __pa_5   0x00130c    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-               BCD_To_DEC   0x001312    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-               DEC_To_BCD   0x001336    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 I2C_Init   0x001356    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                I2C_Start   0x00136e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 I2C_Stop   0x001378    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                I2C_Write   0x001382    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 I2C_Read   0x001392    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-          I2C_WriteDS1307   0x00139e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-           I2C_ReadDS1307   0x0013ec    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_0   0x001442    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_1   0x00144a    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_2   0x001454    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_3   0x00145c    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_4   0x00146e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                   __pa_5   0x00147e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
-                 INT_Init   0x001488    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                  low_isr   0x001490    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                 high_isr   0x001502    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_0   0x001560    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_1   0x00158a    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_2   0x0015b0    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_3   0x0015be    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-                   __pa_4   0x0015cc    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
-               __string_0   0x0015da    program     static E:\PIC\Club\Smart_Clock.X\main.c
-              __string_19   0x0015eb    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_18   0x0015fc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_17   0x001601    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_16   0x001605    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_15   0x001608    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_14   0x001619    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_13   0x00162a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_12   0x00163b    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_11   0x00164c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-              __string_10   0x001650    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_9   0x001653    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_8   0x001664    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_7   0x001675    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_6   0x001678    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_5   0x00167c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_4   0x001680    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_3   0x001684    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_2   0x001688    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_1   0x00168c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-               __string_0   0x001690    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
-                _do_cinit   0x001694    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0016ae    program     static                          
-                copy_loop   0x001706    program     static                          
-            copy_one_byte   0x00170c    program     static                          
-             done_copying   0x00171a    program     static                          
-       ___return_lbl00002   0x001730    program     static                          
-                     done   0x001730    program     static                          
-                 FXD2424S   0x001732    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x001748    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D2424S   0x00175c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001766    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x00176a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001782    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD3232U   0x00178c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x00179a    program     static                          
-                   _false   0x0017ce    program     static                          
-       ___return_lbl00000   0x0017d2    program     static                          
-                 FXD2424U   0x0017d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                     loop   0x0017e0    program     static                          
-                   _false   0x001808    program     static                          
-       ___return_lbl00000   0x00180c    program     static                          
-                 FXD1616U   0x00180e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x001818    program     static                          
-                  endloop   0x001834    program     static                          
-       ___return_lbl00000   0x001838    program     static                          
-            __zero_memory   0x00183a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x001848    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x001850    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001852    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x00185a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00186a    program     static                          
-       ___return_lbl00001   0x001874    program     static                          
-                 FXD0808U   0x001876    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                     loop   0x00187e    program     static                          
-                  endloop   0x00188c    program     static                          
-       ___return_lbl00000   0x001890    program     static                          
+                 FSM_Init   0x000050    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+    LCD_CreateAlarmNormal   0x000056    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+      LCD_CreateAlarmRing   0x00009c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+             PrintWeekDay   0x0000e2    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+              DisplayTime   0x00014a    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+         FSM_AlarmControl   0x00016c    program     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_0   0x00069e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_1   0x0006a6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_2   0x0006b2    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_3   0x0006c0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_4   0x0006cc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_5   0x0006d4    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_6   0x0006dc    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_7   0x0006e0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_8   0x0006ec    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                   __pa_9   0x0006fa    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_10   0x000702    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_11   0x00070e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_12   0x000714    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_13   0x00071c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_14   0x000724    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_15   0x00072e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_16   0x000736    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_17   0x000754    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_18   0x00075e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_19   0x000770    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_20   0x000782    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_21   0x000794    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_22   0x00079a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_23   0x0007a6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_24   0x0007b8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_25   0x0007ca    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_26   0x0007d4    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_27   0x0007da    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_28   0x0007e0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_29   0x0007e6    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_30   0x0007f0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_31   0x0007f8    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_32   0x000806    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_33   0x00080e    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_34   0x000818    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                  __pa_35   0x000826    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                LCD_Delay   0x00082c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+            Delay_virtual   0x000852    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+           LCD_Write4bits   0x0008a2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+            LCD_WriteData   0x0008bc    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+         LCD_WriteCommand   0x0008c2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+          LCD_SendCommand   0x0008c8    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+                 LCD_Init   0x0008da    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+            LCD_SetCursor   0x000918    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+          LCD_ClearBuffer   0x00093c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+     LCD_UpdateCharBuffer   0x00099c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+      LCD_PrintCharBuffer   0x0009c2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+       LCD_PrintNumBuffer   0x0009e4    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+    LCD_PrintStringBuffer   0x000b34    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+   LCD_PrintStringBufferL   0x000b5c    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+        LCD_DisplayScreen   0x000b88    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+           LCD_CreateChar   0x000bd2    program     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_0   0x000c0c    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_1   0x000c16    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_2   0x000c20    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_3   0x000c28    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_4   0x000c40    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_5   0x000c5a    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_6   0x000c68    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_7   0x000c82    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_8   0x000c90    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                   __pa_9   0x000c98    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_10   0x000cb0    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_11   0x000cc8    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_12   0x000cdc    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_13   0x000cec    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_14   0x000cfa    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_15   0x000d16    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_16   0x000d20    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_17   0x000d2c    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __pa_18   0x000d38    program     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                     main   0x000d42    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                 SYS_Init   0x000dfe    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+ SetupTimeForFirstProgram   0x000e32    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+          RTC_GetDateTime   0x000e7e    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+         Create_AlarmIcon   0x000ed4    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                 Delay_ms   0x000f26    program     extern E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_0   0x000fae    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_1   0x000fb6    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_2   0x000fc0    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_3   0x000fce    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_4   0x000fda    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_5   0x000fee    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_6   0x000ffa    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                   __pa_7   0x001004    program     static E:\PIC\Club\Smart_Clock.X\main.c
+                TMR0_Init   0x00100c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR1_Init   0x00102e    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR2_Init   0x001056    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR3_Init   0x001076    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR0_Start   0x0010b0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR1_Start   0x0010b6    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR2_Start   0x0010bc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               TMR3_Start   0x0010c4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR0_Stop   0x0010d4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR1_Stop   0x0010d8    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR2_Stop   0x0010dc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                TMR3_Stop   0x0010e0    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR0_Isr   0x0010e4    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR1_Isr   0x001102    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR2_Isr   0x001120    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                 TMR3_Isr   0x00113e    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR0_SetTime_ms   0x00115c    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR1_SetTime_ms   0x001176    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR2_SetTime_ms   0x0011a2    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+          TMR3_SetTime_ms   0x0011bc    program     extern E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_0   0x0011f0    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_1   0x00121c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_2   0x00122c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_3   0x001236    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_4   0x00123e    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_5   0x001246    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_6   0x00125e    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_7   0x00126c    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_8   0x00127a    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                   __pa_9   0x001288    program     static E:\PIC\Club\Smart_Clock.X\timer.c
+                 KEY_Init   0x001294    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+              KEY_Reading   0x00129c    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+              KEY_IsStuck   0x001364    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+            KEY_IsPressed   0x00137a    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+         KEY_IsPressed_ms   0x001398    program     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_0   0x0013de    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_1   0x0013f2    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_2   0x0013fc    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_3   0x001404    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_4   0x001412    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                   __pa_5   0x00141c    program     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+               BCD_To_DEC   0x001422    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+               DEC_To_BCD   0x001446    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 I2C_Init   0x001466    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                I2C_Start   0x00147e    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 I2C_Stop   0x001488    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                I2C_Write   0x001492    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 I2C_Read   0x0014a2    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+          I2C_WriteDS1307   0x0014ae    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+           I2C_ReadDS1307   0x0014fc    program     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_0   0x001552    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_1   0x00155a    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_2   0x001564    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_3   0x00156c    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_4   0x00157e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                   __pa_5   0x00158e    program     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                 INT_Init   0x001598    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+                  low_isr   0x0015a0    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+                 high_isr   0x001612    program     extern E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_0   0x001670    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_1   0x00169a    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_2   0x0016c0    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_3   0x0016ce    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+                   __pa_4   0x0016dc    program     static E:\PIC\Club\Smart_Clock.X\interrupt.c
+               __string_0   0x0016ea    program     static E:\PIC\Club\Smart_Clock.X\main.c
+              __string_19   0x0016fb    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_18   0x00170c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_17   0x001711    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_16   0x001715    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_15   0x001718    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_14   0x001729    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_13   0x00173a    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_12   0x00174b    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_11   0x00175c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+              __string_10   0x001760    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_9   0x001763    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_8   0x001774    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_7   0x001785    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_6   0x001788    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_5   0x00178c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_4   0x001790    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_3   0x001794    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_2   0x001798    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_1   0x00179c    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+               __string_0   0x0017a0    program     static E:\PIC\Club\Smart_Clock.X\fsm.c
+                _do_cinit   0x0017a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0017be    program     static                          
+                copy_loop   0x001816    program     static                          
+            copy_one_byte   0x00181c    program     static                          
+             done_copying   0x00182a    program     static                          
+       ___return_lbl00002   0x001840    program     static                          
+                     done   0x001840    program     static                          
+                 FXD2424S   0x001842    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x00186c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x00187a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x001892    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD3232U   0x00189c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0018aa    program     static                          
+                   _false   0x0018de    program     static                          
+       ___return_lbl00000   0x0018e2    program     static                          
+                 FXD2424U   0x0018e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x0018f0    program     static                          
+                   _false   0x001918    program     static                          
+       ___return_lbl00000   0x00191c    program     static                          
+                 FXD1616U   0x00191e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x001928    program     static                          
+                  endloop   0x001944    program     static                          
+       ___return_lbl00000   0x001948    program     static                          
+            __zero_memory   0x00194a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x001958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x001958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x001960    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001962    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x00196a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00197a    program     static                          
+       ___return_lbl00001   0x001984    program     static                          
+                 FXD0808U   0x001986    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                     loop   0x00198e    program     static                          
+                  endloop   0x00199c    program     static                          
+       ___return_lbl00000   0x0019a0    program     static                          
                __config_0   0x300001    program     static E:\PIC\Club\Smart_Clock.X\main.c
                __config_1   0x300002    program     static E:\PIC\Club\Smart_Clock.X\main.c
                __config_2   0x300003    program     static E:\PIC\Club\Smart_Clock.X\main.c
@@ -840,8 +864,8 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                  __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -852,102 +876,110 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                    __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\lcd.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\timer.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\main.c
-                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\fsm.c
-       FlagForButtonPress   0x000080       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-    CounterForButtonPress   0x000090       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
-                  alarm_1   0x0000b0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_2   0x0000b8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_3   0x0000c0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_4   0x0000c8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_5   0x0000d0       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                  alarm_6   0x0000d8       data     extern E:\PIC\Club\Smart_Clock.X\main.c
-                LcdScreen   0x0000e0       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-             value_timer0   0x000f00       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer1   0x000f02       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer2   0x000f04       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-             value_timer3   0x000f06       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer0   0x000f08       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer1   0x000f0a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer2   0x000f0c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-           counter_timer3   0x000f0e       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer0   0x000f10       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer1   0x000f12       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer2   0x000f14       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-               MUL_timer3   0x000f16       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-                    _hour   0x000f18       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                  _minute   0x000f19       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                  _second   0x000f1a       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                _week_day   0x000f1b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                    _date   0x000f1c       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                   _month   0x000f1d       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                    _year   0x000f1e       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-               _hourAlarm   0x000f1f       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-             _minuteAlarm   0x000f20       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-               _flagAlarm   0x000f21       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-         _flagBlinkCursor   0x000f22       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-             _flagGetTime   0x000f23       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-          _counterTimeOut   0x000f24       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-         _counterEvery_ms   0x000f26       data     extern E:\PIC\Club\Smart_Clock.X\global.c
-                     prom   0x000f28       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x000f2b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000f2d       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x000f2f       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-       MaskOutputOfButton   0x000f32       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-        MaskInputOfButton   0x000f36       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
-              flag_timer0   0x000f3a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer1   0x000f3b       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer2   0x000f3c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              flag_timer3   0x000f3d       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
-              current_row   0x000f3e       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-              current_col   0x000f40       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
-                     mode   0x000f42       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                     temp   0x000f43       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
-                  ack_bit   0x000f44       data     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+                  __tmp_0   0x000010       data     static E:\PIC\Club\Smart_Clock.X\main.c
+                    _hour   0x000080       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  _minute   0x000081       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  _second   0x000082       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                _week_day   0x000083       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                    _date   0x000084       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                   _month   0x000085       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                    _year   0x000086       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+               _hourAlarm   0x000087       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             _minuteAlarm   0x000088       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+               _flagAlarm   0x000089       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+         _flagBlinkCursor   0x00008a       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             _flagGetTime   0x00008b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+      _flagFrameAnimation   0x00008c       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+          _counterTimeOut   0x00008d       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+         _counterEvery_ms   0x00008f       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+   _counterFrameAnimation   0x000091       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_1   0x000093       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_2   0x00009b       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_3   0x0000a3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_4   0x0000ab       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_5   0x0000b3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                  alarm_6   0x0000bb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_1   0x0000c3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_2   0x0000cb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_3   0x0000d3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_4   0x0000db       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_5   0x0000e3       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+             alarm_ring_6   0x0000eb       data     extern E:\PIC\Club\Smart_Clock.X\global.c
+                     prom   0x0000f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000f6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000fa       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     mode   0x0000fd       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                     temp   0x0000fe       data     extern E:\PIC\Club\Smart_Clock.X\fsm.c
+                  ack_bit   0x0000ff       data     extern E:\PIC\Club\Smart_Clock.X\i2c_ds1307.c
+       FlagForButtonPress   0x000f00       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+    CounterForButtonPress   0x000f10       data     static E:\PIC\Club\Smart_Clock.X\button_matrix.c
+                LcdScreen   0x000f30       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+             value_timer0   0x000f50       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer1   0x000f52       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer2   0x000f54       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+             value_timer3   0x000f56       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer0   0x000f58       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer1   0x000f5a       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer2   0x000f5c       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+           counter_timer3   0x000f5e       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer0   0x000f60       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer1   0x000f62       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer2   0x000f64       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+               MUL_timer3   0x000f66       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+       MaskOutputOfButton   0x000f68       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+        MaskInputOfButton   0x000f6c       data     extern E:\PIC\Club\Smart_Clock.X\button_matrix.c
+              flag_timer0   0x000f70       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer1   0x000f71       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer2   0x000f72       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              flag_timer3   0x000f73       data     extern E:\PIC\Club\Smart_Clock.X\timer.c
+              current_row   0x000f74       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
+              current_col   0x000f76       data     extern E:\PIC\Club\Smart_Clock.X\lcd.c
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -958,49 +990,49 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEADRH   0x000faa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1019,32 +1051,32 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
               SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                       PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1052,8 +1084,8 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                  POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1076,22 +1108,22 @@ Linker Map File - Created Sun Feb 26 21:40:10 2023
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                        PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                       TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
 
