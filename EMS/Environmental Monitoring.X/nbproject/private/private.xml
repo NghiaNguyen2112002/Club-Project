@@ -8,6 +8,10 @@
             <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/main.c</file>
             <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/fsm.c</file>
             <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/fsm.h</file>
+            <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/timer.c</file>
+            <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/button_matrix.c</file>
+            <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/uart.c</file>
+            <file>file:/E:/PIC/Club/EMS/Environmental%20Monitoring.X/uart.h</file>
         </group>
     </open-files>
 </project-private>

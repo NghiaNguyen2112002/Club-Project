@@ -231,7 +231,7 @@ void FSM_DataControl(void){
         case DISPLAY_DATA:
             if(!_counter_reading_data){
                 _counter_reading_data = TIME_READING_DATA;
-                LCD_PrintNumBuffer(0, 8, DHT11_Read());
+//                LCD_PrintNumBuffer(0, 8, DHT11_Read());
                               
                 LCD_PrintNumBuffer(0, INDEX_TEMP_LCD, DHT11_ReturnTemp_Integral());
                 LCD_PrintNumBuffer(1, INDEX_HUMID_LCD, DHT11_ReturnHumid_Integral());
@@ -239,14 +239,18 @@ void FSM_DataControl(void){
             }
             break;
         case SEND_DATA:
-            UART_SendChar("!");
+//            JSON STRING TYPE
+//            {\"sensor\":\"gps\",\"time\":1351824120,\"data\":[48.756080,2.302038]}
             
-            UART_SendString(":1:TEMP:");
-            UART_SendNum(DHT11_ReturnTemp_Integral());
-            UART_SendString(":HUMID:");
-            UART_SendNum(DHT11_ReturnHumid_Integral());
+            UART_SendString("{\"id\":1,\"humid\":");
+            UART_SendNum(12);
+//            UART_SendNum(DHT11_ReturnTemp_Integral());
+            UART_SendString(",\"temp\":");
+            UART_SendNum(89);
+
+//            UART_SendNum(DHT11_ReturnHumid_Integral());
             
-            UART_SendChar(":#");
+            UART_SendString("}#");
             
             mode_data = DISPLAY_DATA;
             break;

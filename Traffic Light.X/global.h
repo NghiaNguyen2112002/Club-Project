@@ -8,7 +8,7 @@
 #ifndef GLOBAL_H
 #define	GLOBAL_H
 
-#define SCREEN_MANUAL_0                 "  TRUNG  NGHIA  "
+#define SCREEN_MANUAL_0                 "                "
 #define SCREEN_MANUAL_1                 " ____MANUAL____ "
 
 #define SCREEN_MANUAL_RED_1             "RED 1  "
@@ -33,8 +33,8 @@
 #define SCREEN_AUTO_YELLOW_1            "1YELLOW "
 #define SCREEN_AUTO_YELLOW_2            "2YELLOW "
 
-extern unsigned char _timeRed, _timeGreen, _timeYellow;
-extern unsigned char _counterLight_1, _counterLight_2;
+extern unsigned int _timeRed, _timeGreen, _timeYellow;
+extern unsigned int _counterLight_1, _counterLight_2;
 extern unsigned int _timeOutAjustMode;
 
 extern unsigned char _flagEvery1Sec;

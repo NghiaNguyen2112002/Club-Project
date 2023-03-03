@@ -26,6 +26,8 @@
 #define YELLOW_2_BUTTON         13
 #define GREEN_2_BUTTON          14
 
+#define TIMEOUT_ADJUSTING       1000             //10 000 ms
+
 enum MODE {INIT, MANUAL, START_AUTO, STOP_AUTO,
             MANUAL_RED_1, MANUAL_GREEN_1, MANUAL_YELLOW_1,
             MANUAL_RED_2, MANUAL_GREEN_2, MANUAL_YELLOW_2,

@@ -23,36 +23,24 @@ void main(void) {
     LCD_ClearBuffer();
     
     while(1){
-        if(flag_timer0){
-            flag_timer0 = 0;
-            if(_counterLight_1 > 0) _counterLight_1--;
-            if(_counterLight_2 > 0) _counterLight_2--;
-            if(_timeOutAjustMode > 0) _timeOutAjustMode--;
-            _flagEvery1Sec = 1;
-        }
-        if(flag_timer1){
-            flag_timer1 = 0;
-            KEY_Reading();     
-
-        }
-        if(flag_timer3){
-            flag_timer3 = 0;
-            LCD_DisplayScreen();
-        }
+        while(!flag_timer3);
+        flag_timer3 = 0;
+        
+        
+        KEY_Reading();     
+        
+        if(_counterLight_1 >= 5) _counterLight_1 -= 5;
+        if(_counterLight_2 >= 5) _counterLight_2 -= 5;
+        if(_timeOutAjustMode >= 5) _timeOutAjustMode -= 5; 
+        
         
         FSM_TrafficLight();
-
+        LCD_DisplayScreen();
     }
     return;
 }
 
-void SYS_Init(void){
-//    internal OSC 4MHz
-    OSCCONbits.IRCF0 = 0;
-    OSCCONbits.IRCF1 = 1;
-    OSCCONbits.IRCF2 = 1;
-//    OSCCONbits.SCS1 = 1;        //internal clock
-    
+void SYS_Init(void){    
 //    Delay_ms(1000);
 
     LCD_Init();
@@ -62,12 +50,12 @@ void SYS_Init(void){
     OUT_Init();
     
 //    timer clock is 1Mhz
-    TMR0_Init(4695);            //1ms
-    TMR1_Init(9390);            //2ms
+//    TMR0_Init(4695);            //1ms
+//    TMR1_Init(9390);            //2ms
     TMR3_Init(46950);           //10ms
 
-    TMR0_SetTime_ms(1000);      //1s
-    TMR1_SetTime_ms(10);        //10ms
+//    TMR0_SetTime_ms(1000);      //1s
+//    TMR1_SetTime_ms(10);        //10ms
     TMR3_SetTime_ms(50);        //50ms
 }
 

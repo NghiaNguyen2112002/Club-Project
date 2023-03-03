@@ -24,7 +24,7 @@ void FSM_TrafficLight(void){
                 LCD_ClearBuffer();
                 LCD_PrintStringBuffer(0, 0, SCREEN_ADJUST_0);
                 LCD_PrintStringBuffer(1, 0, SCREEN_ADJUST_1);
-                _timeOutAjustMode = 10;             //10s
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;             //10s
                 mode = ADJUST;
             }   
             else if(KEY_IsPressed(RED_1_BUTTON)) mode = MANUAL_RED_1;
@@ -85,11 +85,9 @@ void FSM_TrafficLight(void){
             OUT_OnRed_1();
             OUT_OnGreen_2();
             
-            if(_flagEvery1Sec){
-                _flagEvery1Sec = 0;
-                LCD_PrintNumBuffer(0, 8, _counterLight_1);
-                LCD_PrintNumBuffer(1, 8, _counterLight_2);
-            }
+            LCD_PrintNumBuffer(0, 8, _counterLight_1/100);
+            LCD_PrintNumBuffer(1, 8, _counterLight_2/100);
+            
             if(_counterLight_2 == 0) {
                 LCD_PrintStringBuffer(0, 0, SCREEN_AUTO_RED_1);
                 LCD_PrintStringBuffer(1, 0, SCREEN_AUTO_YELLOW_2);
@@ -102,11 +100,9 @@ void FSM_TrafficLight(void){
             OUT_OnRed_1();
             OUT_OnYellow_2();
             
-            if(_flagEvery1Sec){
-                _flagEvery1Sec = 0;
-                LCD_PrintNumBuffer(0, 8, _counterLight_1);
-                LCD_PrintNumBuffer(1, 8, _counterLight_2);
-            }
+            LCD_PrintNumBuffer(0, 8, _counterLight_1/100);
+            LCD_PrintNumBuffer(1, 8, _counterLight_2/100);
+            
             if(_counterLight_1 == 0){
                 LCD_PrintStringBuffer(0, 0, SCREEN_AUTO_GREEN_1);
                 LCD_PrintStringBuffer(1, 0, SCREEN_AUTO_RED_2);
@@ -120,11 +116,9 @@ void FSM_TrafficLight(void){
             OUT_OnGreen_1();
             OUT_OnRed_2();
             
-            if(_flagEvery1Sec){
-                _flagEvery1Sec = 0;
-                LCD_PrintNumBuffer(0, 8, _counterLight_1);
-                LCD_PrintNumBuffer(1, 8, _counterLight_2);
-            }
+            LCD_PrintNumBuffer(0, 8, _counterLight_1/100);
+            LCD_PrintNumBuffer(1, 8, _counterLight_2/100);
+            
             if(_counterLight_1 == 0){
                 LCD_PrintStringBuffer(0, 0, SCREEN_AUTO_YELLOW_1);
                 LCD_PrintStringBuffer(1, 0, SCREEN_AUTO_RED_2);
@@ -137,11 +131,9 @@ void FSM_TrafficLight(void){
             OUT_OnYellow_1();
             OUT_OnRed_2();
             
-            if(_flagEvery1Sec){
-                _flagEvery1Sec = 0;
-                LCD_PrintNumBuffer(0, 8, _counterLight_1);
-                LCD_PrintNumBuffer(1, 8, _counterLight_2);
-            }
+            LCD_PrintNumBuffer(0, 8, _counterLight_1/100);
+            LCD_PrintNumBuffer(1, 8, _counterLight_2/100);
+            
             if(_counterLight_2 == 0){
                 LCD_PrintStringBuffer(0, 0, SCREEN_AUTO_RED_1);
                 LCD_PrintStringBuffer(1, 0, SCREEN_AUTO_GREEN_2);
@@ -156,18 +148,18 @@ void FSM_TrafficLight(void){
                 LCD_ClearBuffer();
                 LCD_PrintStringBuffer(0, 0, SCREEN_ADJUST_GREEN_0);
                 LCD_PrintStringBuffer(0, 1, SCREEN_ADJUST_GREEN_1);
-                LCD_PrintNumBuffer(1, 8, _timeGreen);
+                LCD_PrintNumBuffer(1, 8, _timeGreen/100);
 
-                _timeOutAjustMode = 10;                 //10s
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
                 mode = ADJUST_GREEN;
             }          
             else if(KEY_IsPressed(DEC_BUTTON)){
                 LCD_ClearBuffer();
                 LCD_PrintStringBuffer(0, 0, SCREEN_ADJUST_YELLOW_0);
                 LCD_PrintStringBuffer(0, 1, SCREEN_ADJUST_YELLOW_1);
-                LCD_PrintNumBuffer(1, 8, _timeYellow);
+                LCD_PrintNumBuffer(1, 8, _timeYellow/100);
                 
-                _timeOutAjustMode = 10;                 //10s
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
                 mode = ADJUDT_YELLOW;
             }
             else if(KEY_IsPressed(MODE_BUTTON) || _timeOutAjustMode == 0) mode = INIT;
@@ -175,14 +167,14 @@ void FSM_TrafficLight(void){
             break;
         case ADJUST_GREEN:
             if(KEY_IsPressed(DEC_BUTTON)) {
-                _timeGreen--;
-                _timeOutAjustMode = 10;                 //10s
-                LCD_PrintNumBuffer(1, 8, _timeGreen);
+                _timeGreen -= 100;
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
+                LCD_PrintNumBuffer(1, 8, _timeGreen/100);
             }
             else if(KEY_IsPressed(INC_BUTTON)) {
-                _timeGreen++;
-                _timeOutAjustMode = 10;                 //10s
-                LCD_PrintNumBuffer(1, 8, _timeGreen);
+                _timeGreen += 100;
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
+                LCD_PrintNumBuffer(1, 8, _timeGreen/100);
             }
             else if(KEY_IsPressed(MODE_BUTTON) || _timeOutAjustMode == 0) {
                 _timeRed = _timeGreen + _timeYellow;
@@ -191,14 +183,14 @@ void FSM_TrafficLight(void){
             break;
         case ADJUDT_YELLOW:
             if(KEY_IsPressed(DEC_BUTTON)) {
-                _timeYellow--;
-                _timeOutAjustMode = 10;                 //10s
-                LCD_PrintNumBuffer(1, 8, _timeYellow);
+                _timeYellow -= 100;
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
+                LCD_PrintNumBuffer(1, 8, _timeYellow/100);
             }
             else if(KEY_IsPressed(INC_BUTTON)) {
-                _timeYellow++;
-                _timeOutAjustMode = 10;                 //10s
-                LCD_PrintNumBuffer(1, 8, _timeYellow);
+                _timeYellow += 100;
+                _timeOutAjustMode = TIMEOUT_ADJUSTING;                 //10s
+                LCD_PrintNumBuffer(1, 8, _timeYellow/100);
             }
             else if(KEY_IsPressed(MODE_BUTTON) || _timeOutAjustMode == 0) {
                 _timeRed = _timeGreen + _timeYellow;

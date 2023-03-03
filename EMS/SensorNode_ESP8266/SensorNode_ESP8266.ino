@@ -23,14 +23,20 @@ void setup() {
   TMR1_Init(50);
   
   TMR1_SetTime_ms(1000); 
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(Serial.available() > 0){
-    _uart_received = Serial.readStringUntil('#');
+  if(mySerial.available() > 0){
+    _uart_received = mySerial.readStringUntil('#');
     Serial.println(_uart_received);
-    myData.humi = _uart_received.toInt();
+    
+    StaticJsonBuffer<200> jsonBuffer;
+    JsonObject& dataJson = jsonBuffer.parseObject(_uart_received);
+    myData.humi = dataJson["humid"];
+    // myData.humi = _uart_received.toInt();
+    Serial.println(myData.humi);
     WF_SendData(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
   }
 

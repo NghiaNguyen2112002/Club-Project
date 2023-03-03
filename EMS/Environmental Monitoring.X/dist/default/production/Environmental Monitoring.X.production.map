@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sat Feb 18 03:55:33 2023
+Linker Map File - Created Fri Mar 03 11:06:16 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,57 +7,57 @@ Linker Map File - Created Sat Feb 18 03:55:33 2023
                _entry_scn       code   0x000000    program   0x000006
            .code___init.o       code   0x000006    program   0x000002
       InterruptVectorHigh       code   0x000008    program   0x000006
+         .romdata_timer.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
+           .romdata_lcd.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd0808u.o    romdata   0x00000e    program   0x000000
+          .idata_main.o_i    romdata   0x00000e    program   0x000000
+          .romdata_main.o    romdata   0x00000e    program   0x000000
+      .idata_fxd0808u.o_i    romdata   0x00000e    program   0x000000
+          .romdata_uart.o    romdata   0x00000e    program   0x000000
+          .idata_uart.o_i    romdata   0x00000e    program   0x000000
+           .romdata_fsm.o    romdata   0x00000e    program   0x000000
+           .idata_fsm.o_i    romdata   0x00000e    program   0x000000
+        .romdata_global.o    romdata   0x00000e    program   0x000000
+         .romdata_DHT11.o    romdata   0x00000e    program   0x000000
+         .idata_c018i.o_i    romdata   0x00000e    program   0x000000
+         .romdata_c018i.o    romdata   0x00000e    program   0x000000
  .idata_button_matrix.o_i    romdata   0x00000e    program   0x000008
+ .romdata_button_matrix.o    romdata   0x00000e    program   0x000000
+        .romdata___init.o    romdata   0x00000e    program   0x000000
+    .idata_i2c_ds1307.o_i    romdata   0x00000e    program   0x000000
+    .romdata_i2c_ds1307.o    romdata   0x00000e    program   0x000000
+     .idata_interrupt.o_i    romdata   0x00000e    program   0x000000
+     .romdata_interrupt.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x00000e    program   0x000000
+        .idata___init.o_i    romdata   0x000016    program   0x000000
+            .code_c018i.o       code   0x000016    program   0x000000
+           .code_global.o       code   0x000016    program   0x000000
+         .idata_DHT11.o_i    romdata   0x000016    program   0x000000
        InterruptVectorLow       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x000032
-              .code_fsm.o       code   0x000050    program   0x0006f0
-            .code_timer.o       code   0x000740    program   0x000554
-              .code_lcd.o       code   0x000c94    program   0x0004ec
-             .code_main.o       code   0x001180    program   0x0002c0
-    .code_button_matrix.o       code   0x001440    program   0x00029a
-        .code_interrupt.o       code   0x0016da    program   0x0001ca
-       .code_i2c_ds1307.o       code   0x0018a4    program   0x0001c8
-            .code_DHT11.o       code   0x001a6c    program   0x0001aa
-             .code_uart.o       code   0x001c16    program   0x0000c4
-               _cinit_scn       code   0x001cda    program   0x00009e
-             .stringtable    romdata   0x001d78    program   0x00005f
-         .idata_DHT11.o_i    romdata   0x001dd7    program   0x000000
-         .romdata_DHT11.o    romdata   0x001dd7    program   0x000000
-        .romdata_global.o    romdata   0x001dd7    program   0x000000
-           .idata_fsm.o_i    romdata   0x001dd7    program   0x000000
-        .idata___init.o_i    romdata   0x001dd7    program   0x000000
-           .romdata_fsm.o    romdata   0x001dd7    program   0x000000
-      .romdata_fxd2424u.o    romdata   0x001dd7    program   0x000000
-      .idata_fxd2424u.o_i    romdata   0x001dd7    program   0x000000
-          .idata_uart.o_i    romdata   0x001dd7    program   0x000000
-          .romdata_uart.o    romdata   0x001dd7    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x001dd7    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x001dd7    program   0x000000
-      .idata_fxd0808u.o_i    romdata   0x001dd7    program   0x000000
-      .romdata_fxd0808u.o    romdata   0x001dd7    program   0x000000
-        .romdata___init.o    romdata   0x001dd7    program   0x000000
-         .romdata_timer.o    romdata   0x001dd7    program   0x000000
-     .romdata_interrupt.o    romdata   0x001dd7    program   0x000000
-           .romdata_lcd.o    romdata   0x001dd7    program   0x000000
-          .idata_main.o_i    romdata   0x001dd7    program   0x000000
-          .romdata_main.o    romdata   0x001dd7    program   0x000000
-     .idata_interrupt.o_i    romdata   0x001dd7    program   0x000000
-    .romdata_i2c_ds1307.o    romdata   0x001dd7    program   0x000000
-    .idata_i2c_ds1307.o_i    romdata   0x001dd7    program   0x000000
- .romdata_button_matrix.o    romdata   0x001dd7    program   0x000000
-         .romdata_c018i.o    romdata   0x001dd7    program   0x000000
-         .idata_c018i.o_i    romdata   0x001dd7    program   0x000000
-                     PROG       code   0x001dd8    program   0x00005a
-           .code_global.o       code   0x001dd8    program   0x000000
-            .code_c018i.o       code   0x001dd8    program   0x000000
-         .code_fxd2424u.o       code   0x001e32    program   0x00003a
-         .code_fxd1616u.o       code   0x001e6c    program   0x00002c
-                    .code       code   0x001e98    program   0x000020
-             _startup_scn       code   0x001eb8    program   0x00001c
-         .code_fxd0808u.o       code   0x001ed4    program   0x00001c
-         .idata_timer.o_i    romdata   0x001ef0    program   0x000018
-           .idata_lcd.o_i    romdata   0x001f08    program   0x000020
-        .idata_global.o_i    romdata   0x001f28    program   0x000011
+              .code_fsm.o       code   0x000050    program   0x00049e
+              .code_lcd.o       code   0x0004ee    program   0x000344
+            .code_timer.o       code   0x000832    program   0x000290
+             .code_main.o       code   0x000ac2    program   0x000220
+    .code_button_matrix.o       code   0x000ce2    program   0x00018e
+       .code_i2c_ds1307.o       code   0x000e70    program   0x000176
+            .code_DHT11.o       code   0x000fe6    program   0x000174
+        .code_interrupt.o       code   0x00115a    program   0x000160
+             .code_uart.o       code   0x0012ba    program   0x0000a2
+               _cinit_scn       code   0x00135c    program   0x00009e
+             .stringtable    romdata   0x0013fa    program   0x000066
+                     PROG       code   0x001460    program   0x00005a
+         .code_fxd2424u.o       code   0x0014ba    program   0x00003a
+         .code_fxd1616u.o       code   0x0014f4    program   0x00002c
+                    .code       code   0x001520    program   0x000020
+             _startup_scn       code   0x001540    program   0x00001c
+         .code_fxd0808u.o       code   0x00155c    program   0x00001c
+         .idata_timer.o_i    romdata   0x001578    program   0x000018
+           .idata_lcd.o_i    romdata   0x001590    program   0x000020
+        .idata_global.o_i    romdata   0x0015b0    program   0x000011
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -75,33 +75,33 @@ Linker Map File - Created Sat Feb 18 03:55:33 2023
              .idata_lcd.o      idata   0x0000d5       data   0x000020
            .udata_c018i.o      udata   0x0000f5       data   0x00000a
             .udata_uart.o      udata   0x0000ff       data   0x000001
-   .idata_button_matrix.o      idata   0x000100       data   0x000008
-             .udata_lcd.o      udata   0x000108       data   0x000004
-             .idata_fsm.o      idata   0x00010c       data   0x000000
-            .idata_uart.o      idata   0x00010c       data   0x000000
-        .udata_fxd0808u.o      udata   0x00010c       data   0x000000
-        .idata_fxd0808u.o      idata   0x00010c       data   0x000000
-        .udata_fxd1616u.o      udata   0x00010c       data   0x000000
-        .idata_fxd1616u.o      idata   0x00010c       data   0x000000
-        .udata_fxd2424u.o      udata   0x00010c       data   0x000000
-        .idata_fxd2424u.o      idata   0x00010c       data   0x000000
-          .udata___init.o      udata   0x00010c       data   0x000000
-          .idata___init.o      idata   0x00010c       data   0x000000
-          .udata_global.o      udata   0x00010c       data   0x000000
-           .idata_DHT11.o      idata   0x00010c       data   0x000000
-            .idata_main.o      idata   0x00010c       data   0x000000
-            .udata_main.o      udata   0x00010c       data   0x000000
-       .idata_interrupt.o      idata   0x00010c       data   0x000000
-       .udata_interrupt.o      udata   0x00010c       data   0x000000
-      .idata_i2c_ds1307.o      idata   0x00010c       data   0x000000
-           .idata_c018i.o      idata   0x00010c       data   0x000000
                    .stack      udata   0x000e00       data   0x000100
-   .udata_button_matrix.o      udata   0x000f00       data   0x000050
-           .idata_timer.o      idata   0x000f50       data   0x000018
-          .idata_global.o      idata   0x000f68       data   0x000011
-           .udata_timer.o      udata   0x000f79       data   0x000004
-             .udata_fsm.o      udata   0x000f7d       data   0x000002
-      .udata_i2c_ds1307.o      udata   0x000f7f       data   0x000001
+   .udata_button_matrix.o      udata   0x000f00       data   0x000030
+           .idata_timer.o      idata   0x000f30       data   0x000018
+          .idata_global.o      idata   0x000f48       data   0x000011
+   .idata_button_matrix.o      idata   0x000f59       data   0x000008
+           .udata_timer.o      udata   0x000f61       data   0x000004
+             .udata_lcd.o      udata   0x000f65       data   0x000004
+             .udata_fsm.o      udata   0x000f69       data   0x000002
+      .udata_i2c_ds1307.o      udata   0x000f6b       data   0x000001
+        .udata_fxd0808u.o      udata   0x000f6c       data   0x000000
+        .idata_fxd0808u.o      idata   0x000f6c       data   0x000000
+        .udata_fxd1616u.o      udata   0x000f6c       data   0x000000
+        .idata_fxd1616u.o      idata   0x000f6c       data   0x000000
+        .udata_fxd2424u.o      udata   0x000f6c       data   0x000000
+        .idata_fxd2424u.o      idata   0x000f6c       data   0x000000
+          .udata___init.o      udata   0x000f6c       data   0x000000
+          .idata___init.o      idata   0x000f6c       data   0x000000
+           .idata_c018i.o      idata   0x000f6c       data   0x000000
+            .idata_uart.o      idata   0x000f6c       data   0x000000
+             .idata_fsm.o      idata   0x000f6c       data   0x000000
+          .udata_global.o      udata   0x000f6c       data   0x000000
+           .idata_DHT11.o      idata   0x000f6c       data   0x000000
+            .idata_main.o      idata   0x000f6c       data   0x000000
+            .udata_main.o      udata   0x000f6c       data   0x000000
+       .idata_interrupt.o      idata   0x000f6c       data   0x000000
+       .udata_interrupt.o      udata   0x000f6c       data   0x000000
+      .idata_i2c_ds1307.o      idata   0x000f6c       data   0x000000
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
 
@@ -110,107 +110,106 @@ Linker Map File - Created Sat Feb 18 03:55:33 2023
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000015      
-                            0x000018    0x001dd6      
-                            0x001dd8    0x001f38      
+                            0x000018    0x0015c0      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            8001 out of 66584 program addresses used, program memory utilization is 12%
+            5578 out of 66584 program addresses used, program memory utilization is 8%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-               BCD_To_DEC   0x0018a4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                   D2424S   0x001e02    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x001e10    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001e0c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001e28    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x001dee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-               DEC_To_BCD   0x0018e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-               DHT11_Init   0x001b4c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-               DHT11_Read   0x001b52    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnHumid_Decimal   0x001c10    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnHumid_Integral   0x001c0a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
- DHT11_ReturnTemp_Decimal   0x001c04    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-                    Delay   0x001a6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-                 Delay_ms   0x0013b8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-            Delay_virtual   0x000cda    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+               BCD_To_DEC   0x000e70    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   D2424S   0x00148a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001498    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001494    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x0014b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001476    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+               DEC_To_BCD   0x000e94    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+               DHT11_Init   0x001082    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+               DHT11_Read   0x001088    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnHumid_Decimal   0x001116    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnHumid_Integral   0x001110    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+ DHT11_ReturnTemp_Decimal   0x00110a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnTemp_Integral   0x001104    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                    Delay   0x000fe6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                 Delay_ms   0x000c2e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+            Delay_virtual   0x000514    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
               DisplayTime   0x000058    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-         FSM_ClockControl   0x0000d4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-          FSM_DataControl   0x000634    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+         FSM_ClockControl   0x00007e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+          FSM_DataControl   0x00037c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
                  FSM_Init   0x000050    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                 FXD0808U   0x001ed4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                 FXD1616U   0x001e6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD2424S   0x001dd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x001e32    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                 I2C_Init   0x001938    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 I2C_Read   0x001980    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-           I2C_ReadDS1307   0x0019f8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                I2C_Start   0x001950    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 I2C_Stop   0x00195a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                I2C_Write   0x001964    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-          I2C_WriteDS1307   0x00198c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 INT_Init   0x0016da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                 FXD0808U   0x00155c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                 FXD1616U   0x0014f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x001460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x0014ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 I2C_Init   0x000eb4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 I2C_Read   0x000ef0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+           I2C_ReadDS1307   0x000f4a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                I2C_Start   0x000ecc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 I2C_Stop   0x000ed6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                I2C_Write   0x000ee0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+          I2C_WriteDS1307   0x000efc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 INT_Init   0x00115a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
       InterruptVectorHigh   0x000008    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
        InterruptVectorLow   0x000018    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-                 KEY_Init   0x001440    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-            KEY_IsPressed   0x00162c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-         KEY_IsPressed_ms   0x001670    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-              KEY_IsStuck   0x0015fa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-              KEY_Reading   0x001448    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-          LCD_ClearBuffer   0x000f00    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-                LCD_Delay   0x000c94    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-        LCD_DisplayScreen   0x001116    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-                 LCD_Init   0x000e2c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-      LCD_PrintCharBuffer   0x000fb2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-       LCD_PrintNumBuffer   0x001008    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-    LCD_PrintStringBuffer   0x001066    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-   LCD_PrintStringBufferL   0x0010bc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-          LCD_SendCommand   0x000ddc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-            LCD_SetCursor   0x000ed0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-     LCD_UpdateCharBuffer   0x000f6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-           LCD_Write4bits   0x000d4a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-         LCD_WriteCommand   0x000daa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-            LCD_WriteData   0x000d78    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-              ProcessData   0x001a8e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-          RTC_GetDateTime   0x001356    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                 SYS_Init   0x001242    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
- SetupTimeForFirstProgram   0x001298    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                TMR0_Init   0x000740    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR0_Isr   0x000b50    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR0_SetTime_ms   0x000bc8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR0_Start   0x000992    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR0_Stop   0x000b40    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR1_Init   0x0007f4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR1_Isr   0x000b6e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR1_SetTime_ms   0x000bee    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR1_Start   0x000a1e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR1_Stop   0x000b44    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR2_Init   0x0008b0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR2_Isr   0x000b8c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR2_SetTime_ms   0x000c2e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR2_Start   0x000aac    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR2_Stop   0x000b48    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR3_Init   0x0008dc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR3_Isr   0x000baa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR3_SetTime_ms   0x000c54    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR3_Start   0x000ab4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR3_Stop   0x000b4c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                UART_Init   0x001c16    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-                 UART_Isr   0x001cd4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-            UART_SendChar   0x001c34    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-             UART_SendNum   0x001c90    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-          UART_SendString   0x001c50    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-       ___return_lbl00000   0x001eee    program     static                          
-       ___return_lbl00000   0x001e6a    program     static                          
+                 KEY_Init   0x000ce2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+            KEY_IsPressed   0x000dc8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+         KEY_IsPressed_ms   0x000de6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+              KEY_IsStuck   0x000db2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+              KEY_Reading   0x000cea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+          LCD_ClearBuffer   0x0005fe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                LCD_Delay   0x0004ee    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+        LCD_DisplayScreen   0x000714    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                 LCD_Init   0x00059c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+      LCD_PrintCharBuffer   0x000684    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+       LCD_PrintNumBuffer   0x0006a6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+    LCD_PrintStringBuffer   0x0006c0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+   LCD_PrintStringBufferL   0x0006e8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+          LCD_SendCommand   0x00058a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+            LCD_SetCursor   0x0005da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+     LCD_UpdateCharBuffer   0x00065e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+           LCD_Write4bits   0x000564    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+         LCD_WriteCommand   0x000584    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+            LCD_WriteData   0x00057e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+              ProcessData   0x000ffc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+          RTC_GetDateTime   0x000bf0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                 SYS_Init   0x000b6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+ SetupTimeForFirstProgram   0x000ba4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                TMR0_Init   0x000832    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR0_Isr   0x00090a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR0_SetTime_ms   0x000982    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR0_Start   0x0008d6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR0_Stop   0x0008fa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR1_Init   0x000854    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR1_Isr   0x000928    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR1_SetTime_ms   0x00099c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR1_Start   0x0008dc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR1_Stop   0x0008fe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR2_Init   0x00087c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR2_Isr   0x000946    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR2_SetTime_ms   0x0009d0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR2_Start   0x0008e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR2_Stop   0x000902    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR3_Init   0x00089c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR3_Isr   0x000964    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR3_SetTime_ms   0x0009ea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR3_Start   0x0008ea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR3_Stop   0x000906    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                UART_Init   0x0012ba    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                 UART_Isr   0x00132c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+            UART_SendChar   0x0012d8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+             UART_SendNum   0x001318    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+          UART_SendString   0x0012e8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+       ___return_lbl00000   0x001576    program     static                          
+       ___return_lbl00000   0x0014f2    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x001e96    program     static                          
-       ___return_lbl00001   0x001ed2    program     static                          
+       ___return_lbl00000   0x00151e    program     static                          
+       ___return_lbl00001   0x00155a    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00002   0x001d76    program     static                          
+       ___return_lbl00002   0x0013f8    program     static                          
        ___return_lbl00002   0x00000c    program     static                          
                __config_0   0x300001    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                __config_1   0x300002    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
@@ -224,40 +223,112 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                __config_8   0x30000b    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                __config_9   0x30000c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __string_0   0x001dce    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_0   0x001d89    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-               __string_1   0x001dc5    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_1   0x001d78    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-               __string_2   0x001dc2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_3   0x001db9    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_4   0x001db0    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_5   0x001dae    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_6   0x001da5    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_7   0x001d9d    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_8   0x001d9a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-            __zero_memory   0x001e98    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x001cda    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __pa_0   0x000a1e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_0   0x001240    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_0   0x000438    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_0   0x00111c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_0   0x00075e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_0   0x001332    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_0   0x000e2c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_0   0x000fa0    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_0   0x000cb6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_1   0x000a4a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_1   0x000444    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_1   0x00126a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_1   0x001128    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_1   0x000fa8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_1   0x000cbe    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_1   0x001342    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_1   0x000768    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_1   0x000e40    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                  __pa_10   0x0004a2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_10   0x0007f6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_11   0x0004a8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_11   0x000812    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_12   0x00081c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_12   0x0004b4    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_13   0x000828    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_13   0x0004ba    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_14   0x0004c8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_15   0x0004ce    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_16   0x0004d6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_17   0x0004e2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_18   0x0004e8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_2   0x000e4a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_2   0x000772    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_2   0x00134c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_2   0x000cc8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_2   0x00113a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_2   0x000fb2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_2   0x000450    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_2   0x001290    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_2   0x000a5a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_3   0x000fba    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_3   0x000cd6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_3   0x001148    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_3   0x00045c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_3   0x00129e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_3   0x00077a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_3   0x001354    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_3   0x000e52    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_3   0x000a64    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_4   0x000468    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_4   0x000e60    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_4   0x001152    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_4   0x000fcc    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_4   0x0012ac    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_4   0x000a6c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_4   0x000792    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_5   0x000e6a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_5   0x000fdc    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_5   0x000a74    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_5   0x000472    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_5   0x0007aa    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_6   0x0007c2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_6   0x00047e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_6   0x000a8c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_7   0x000a9a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_7   0x00048a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_7   0x0007d2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_8   0x000492    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_8   0x000aa8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_8   0x0007da    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_9   0x00049a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_9   0x000ab6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_9   0x0007e8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+               __string_0   0x001457    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_0   0x00140b    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+               __string_1   0x00144e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_1   0x0013fa    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+               __string_2   0x00144b    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_3   0x001442    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_4   0x001439    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_5   0x001428    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_6   0x00141f    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_7   0x00141c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+            __zero_memory   0x001520    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x00135c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x001e66    program     static                          
-                 _startup   0x001eb8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x001eae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x001d4c    program     static                          
-            copy_one_byte   0x001d52    program     static                          
-                     done   0x001d76    program     static                          
-             done_copying   0x001d60    program     static                          
-                  endloop   0x001e92    program     static                          
-                  endloop   0x001eea    program     static                          
-                 high_isr   0x0017cc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-                     loop   0x001e76    program     static                          
-                     loop   0x001ec8    program     static                          
-                     loop   0x001e3e    program     static                          
-                     loop   0x001edc    program     static                          
-                   loop_h   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001eb0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  low_isr   0x0016e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-                     main   0x001180    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                     test   0x001cf4    program     static                          
-               zero_block   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   _false   0x0014ee    program     static                          
+                 _startup   0x001540    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x001536    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x0013ce    program     static                          
+            copy_one_byte   0x0013d4    program     static                          
+                     done   0x0013f8    program     static                          
+             done_copying   0x0013e2    program     static                          
+                  endloop   0x001572    program     static                          
+                  endloop   0x00151a    program     static                          
+                 high_isr   0x0011da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                     loop   0x001564    program     static                          
+                     loop   0x0014fe    program     static                          
+                     loop   0x0014c6    program     static                          
+                     loop   0x001550    program     static                          
+                   loop_h   0x00152e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x001162    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                     main   0x000ac2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                     test   0x001376    program     static                          
+               zero_block   0x00152e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -286,7 +357,7 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-    CounterForButtonPress   0x000f30       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+    CounterForButtonPress   0x000f10       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -297,8 +368,6 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-    DebounceButtonBuffer1   0x000f00       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-    DebounceButtonBuffer2   0x000f10       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -316,7 +385,7 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-       FlagForButtonPress   0x000f20       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+       FlagForButtonPress   0x000f00       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
                   HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -345,12 +414,12 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 LcdScreen   0x0000d5       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-               MUL_timer0   0x000f60       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer1   0x000f62       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer2   0x000f64       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer3   0x000f66       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-        MaskInputOfButton   0x000104       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-       MaskOutputOfButton   0x000100       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+               MUL_timer0   0x000f40       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer1   0x000f42       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer2   0x000f44       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer3   0x000f46       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+        MaskInputOfButton   0x000f5d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+       MaskOutputOfButton   0x000f59       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -483,43 +552,43 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
                   __tmp_0   0x000010       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
                   __tmp_0   0x000010       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-        _counter_blinking   0x000f75       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-    _counter_display_time   0x000f71       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-    _counter_reading_data   0x000f77       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-        _counter_time_out   0x000f73       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                    _date   0x000f6c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-           _flag_blinking   0x000f70       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-           _flag_get_time   0x000f6f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                    _hour   0x000f68       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                  _minute   0x000f69       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                   _month   0x000f6d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                  _second   0x000f6a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                _week_day   0x000f6b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                    _year   0x000f6e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                  ack_bit   0x000f7f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-           counter_timer0   0x000f58       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer1   0x000f5a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer2   0x000f5c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer3   0x000f5e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+        _counter_blinking   0x000f55       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+    _counter_display_time   0x000f51       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+    _counter_reading_data   0x000f57       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+        _counter_time_out   0x000f53       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                    _date   0x000f4c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+           _flag_blinking   0x000f50       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+           _flag_get_time   0x000f4f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                    _hour   0x000f48       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                  _minute   0x000f49       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                   _month   0x000f4d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                  _second   0x000f4a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                _week_day   0x000f4b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                    _year   0x000f4e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                  ack_bit   0x000f6b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+           counter_timer0   0x000f38       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer1   0x000f3a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer2   0x000f3c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer3   0x000f3e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
                 curr_byte   0x0000f8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x0000fa       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              current_col   0x00010a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-              current_row   0x000108       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+              current_col   0x000f67       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+              current_row   0x000f65       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
               data_buffer   0x000080       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
                  data_ptr   0x0000fc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
              data_receive   0x0000ff       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-              flag_timer0   0x000f79       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer1   0x000f7a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer2   0x000f7b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer3   0x000f7c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                     mode   0x000f7d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                mode_data   0x000f7e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+              flag_timer0   0x000f61       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer1   0x000f62       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer2   0x000f63       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer3   0x000f64       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                     mode   0x000f69       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                mode_data   0x000f6a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
                      prom   0x0000f5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
             pulse_counter   0x000085       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-             value_timer0   0x000f50       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer1   0x000f52       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer2   0x000f54       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer3   0x000f56       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer0   0x000f30       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer1   0x000f32       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer2   0x000f34       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer3   0x000f36       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
 
 
 
@@ -535,122 +604,194 @@ DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Envir
        ___return_lbl00001   0x00001c    program     static                          
                  FSM_Init   0x000050    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
               DisplayTime   0x000058    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-         FSM_ClockControl   0x0000d4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-          FSM_DataControl   0x000634    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                TMR0_Init   0x000740    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR1_Init   0x0007f4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR2_Init   0x0008b0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR3_Init   0x0008dc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR0_Start   0x000992    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR1_Start   0x000a1e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR2_Start   0x000aac    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               TMR3_Start   0x000ab4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR0_Stop   0x000b40    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR1_Stop   0x000b44    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR2_Stop   0x000b48    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                TMR3_Stop   0x000b4c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR0_Isr   0x000b50    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR1_Isr   0x000b6e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR2_Isr   0x000b8c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                 TMR3_Isr   0x000baa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR0_SetTime_ms   0x000bc8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR1_SetTime_ms   0x000bee    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR2_SetTime_ms   0x000c2e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-          TMR3_SetTime_ms   0x000c54    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                LCD_Delay   0x000c94    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-            Delay_virtual   0x000cda    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-           LCD_Write4bits   0x000d4a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-            LCD_WriteData   0x000d78    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-         LCD_WriteCommand   0x000daa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-          LCD_SendCommand   0x000ddc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-                 LCD_Init   0x000e2c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-            LCD_SetCursor   0x000ed0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-          LCD_ClearBuffer   0x000f00    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-     LCD_UpdateCharBuffer   0x000f6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-      LCD_PrintCharBuffer   0x000fb2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-       LCD_PrintNumBuffer   0x001008    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-    LCD_PrintStringBuffer   0x001066    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-   LCD_PrintStringBufferL   0x0010bc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-        LCD_DisplayScreen   0x001116    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-                     main   0x001180    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                 SYS_Init   0x001242    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
- SetupTimeForFirstProgram   0x001298    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-          RTC_GetDateTime   0x001356    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                 Delay_ms   0x0013b8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-                 KEY_Init   0x001440    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-              KEY_Reading   0x001448    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-              KEY_IsStuck   0x0015fa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-            KEY_IsPressed   0x00162c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-         KEY_IsPressed_ms   0x001670    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-                 INT_Init   0x0016da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-                  low_isr   0x0016e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-                 high_isr   0x0017cc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
-               BCD_To_DEC   0x0018a4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-               DEC_To_BCD   0x0018e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 I2C_Init   0x001938    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                I2C_Start   0x001950    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 I2C_Stop   0x00195a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                I2C_Write   0x001964    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                 I2C_Read   0x001980    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-          I2C_WriteDS1307   0x00198c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-           I2C_ReadDS1307   0x0019f8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
-                    Delay   0x001a6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-              ProcessData   0x001a8e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-               DHT11_Init   0x001b4c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-               DHT11_Read   0x001b52    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnTemp_Integral   0x001bfe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
- DHT11_ReturnTemp_Decimal   0x001c04    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnHumid_Integral   0x001c0a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-DHT11_ReturnHumid_Decimal   0x001c10    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
-                UART_Init   0x001c16    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-            UART_SendChar   0x001c34    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-          UART_SendString   0x001c50    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-             UART_SendNum   0x001c90    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-                 UART_Isr   0x001cd4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-                _do_cinit   0x001cda    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x001cf4    program     static                          
-                copy_loop   0x001d4c    program     static                          
-            copy_one_byte   0x001d52    program     static                          
-             done_copying   0x001d60    program     static                          
-       ___return_lbl00002   0x001d76    program     static                          
-                     done   0x001d76    program     static                          
-               __string_1   0x001d78    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-               __string_0   0x001d89    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
-               __string_8   0x001d9a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_7   0x001d9d    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_6   0x001da5    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_5   0x001dae    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_4   0x001db0    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_3   0x001db9    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_2   0x001dc2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_1   0x001dc5    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-               __string_0   0x001dce    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                 FXD2424S   0x001dd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x001dee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D2424S   0x001e02    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x001e0c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x001e10    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x001e28    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x001e32    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                     loop   0x001e3e    program     static                          
-                   _false   0x001e66    program     static                          
-       ___return_lbl00000   0x001e6a    program     static                          
-                 FXD1616U   0x001e6c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x001e76    program     static                          
-                  endloop   0x001e92    program     static                          
-       ___return_lbl00000   0x001e96    program     static                          
-            __zero_memory   0x001e98    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x001ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x001eae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001eb0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x001eb8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x001ec8    program     static                          
-       ___return_lbl00001   0x001ed2    program     static                          
-                 FXD0808U   0x001ed4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                     loop   0x001edc    program     static                          
-                  endloop   0x001eea    program     static                          
-       ___return_lbl00000   0x001eee    program     static                          
+         FSM_ClockControl   0x00007e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+          FSM_DataControl   0x00037c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_0   0x000438    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_1   0x000444    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_2   0x000450    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_3   0x00045c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_4   0x000468    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_5   0x000472    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_6   0x00047e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_7   0x00048a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_8   0x000492    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                   __pa_9   0x00049a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_10   0x0004a2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_11   0x0004a8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_12   0x0004b4    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_13   0x0004ba    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_14   0x0004c8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_15   0x0004ce    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_16   0x0004d6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_17   0x0004e2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  __pa_18   0x0004e8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                LCD_Delay   0x0004ee    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+            Delay_virtual   0x000514    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+           LCD_Write4bits   0x000564    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+            LCD_WriteData   0x00057e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+         LCD_WriteCommand   0x000584    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+          LCD_SendCommand   0x00058a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                 LCD_Init   0x00059c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+            LCD_SetCursor   0x0005da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+          LCD_ClearBuffer   0x0005fe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+     LCD_UpdateCharBuffer   0x00065e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+      LCD_PrintCharBuffer   0x000684    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+       LCD_PrintNumBuffer   0x0006a6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+    LCD_PrintStringBuffer   0x0006c0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+   LCD_PrintStringBufferL   0x0006e8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+        LCD_DisplayScreen   0x000714    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_0   0x00075e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_1   0x000768    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_2   0x000772    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_3   0x00077a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_4   0x000792    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_5   0x0007aa    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_6   0x0007c2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_7   0x0007d2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_8   0x0007da    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                   __pa_9   0x0007e8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_10   0x0007f6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_11   0x000812    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_12   0x00081c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                  __pa_13   0x000828    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                TMR0_Init   0x000832    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR1_Init   0x000854    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR2_Init   0x00087c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR3_Init   0x00089c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR0_Start   0x0008d6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR1_Start   0x0008dc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR2_Start   0x0008e2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               TMR3_Start   0x0008ea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR0_Stop   0x0008fa    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR1_Stop   0x0008fe    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR2_Stop   0x000902    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                TMR3_Stop   0x000906    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR0_Isr   0x00090a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR1_Isr   0x000928    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR2_Isr   0x000946    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                 TMR3_Isr   0x000964    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR0_SetTime_ms   0x000982    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR1_SetTime_ms   0x00099c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR2_SetTime_ms   0x0009d0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+          TMR3_SetTime_ms   0x0009ea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_0   0x000a1e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_1   0x000a4a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_2   0x000a5a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_3   0x000a64    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_4   0x000a6c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_5   0x000a74    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_6   0x000a8c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_7   0x000a9a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_8   0x000aa8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                   __pa_9   0x000ab6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                     main   0x000ac2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                 SYS_Init   0x000b6c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+ SetupTimeForFirstProgram   0x000ba4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+          RTC_GetDateTime   0x000bf0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                 Delay_ms   0x000c2e    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_0   0x000cb6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_1   0x000cbe    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_2   0x000cc8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                   __pa_3   0x000cd6    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+                 KEY_Init   0x000ce2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+              KEY_Reading   0x000cea    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+              KEY_IsStuck   0x000db2    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+            KEY_IsPressed   0x000dc8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+         KEY_IsPressed_ms   0x000de6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_0   0x000e2c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_1   0x000e40    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_2   0x000e4a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_3   0x000e52    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_4   0x000e60    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+                   __pa_5   0x000e6a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+               BCD_To_DEC   0x000e70    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+               DEC_To_BCD   0x000e94    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 I2C_Init   0x000eb4    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                I2C_Start   0x000ecc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 I2C_Stop   0x000ed6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                I2C_Write   0x000ee0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                 I2C_Read   0x000ef0    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+          I2C_WriteDS1307   0x000efc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+           I2C_ReadDS1307   0x000f4a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_0   0x000fa0    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_1   0x000fa8    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_2   0x000fb2    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_3   0x000fba    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_4   0x000fcc    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                   __pa_5   0x000fdc    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+                    Delay   0x000fe6    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+              ProcessData   0x000ffc    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+               DHT11_Init   0x001082    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+               DHT11_Read   0x001088    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnTemp_Integral   0x001104    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+ DHT11_ReturnTemp_Decimal   0x00110a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnHumid_Integral   0x001110    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+DHT11_ReturnHumid_Decimal   0x001116    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_0   0x00111c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_1   0x001128    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_2   0x00113a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_3   0x001148    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                   __pa_4   0x001152    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\DHT11.c
+                 INT_Init   0x00115a    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                  low_isr   0x001162    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                 high_isr   0x0011da    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_0   0x001240    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_1   0x00126a    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_2   0x001290    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_3   0x00129e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                   __pa_4   0x0012ac    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\interrupt.c
+                UART_Init   0x0012ba    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+            UART_SendChar   0x0012d8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+          UART_SendString   0x0012e8    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+             UART_SendNum   0x001318    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                 UART_Isr   0x00132c    program     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_0   0x001332    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_1   0x001342    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_2   0x00134c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                   __pa_3   0x001354    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
+                _do_cinit   0x00135c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x001376    program     static                          
+                copy_loop   0x0013ce    program     static                          
+            copy_one_byte   0x0013d4    program     static                          
+             done_copying   0x0013e2    program     static                          
+                     done   0x0013f8    program     static                          
+       ___return_lbl00002   0x0013f8    program     static                          
+               __string_1   0x0013fa    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+               __string_0   0x00140b    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
+               __string_7   0x00141c    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_6   0x00141f    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_5   0x001428    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_4   0x001439    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_3   0x001442    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_2   0x00144b    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_1   0x00144e    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+               __string_0   0x001457    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                 FXD2424S   0x001460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x001476    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x00148a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x001494    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x001498    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x0014b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x0014ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x0014c6    program     static                          
+                   _false   0x0014ee    program     static                          
+       ___return_lbl00000   0x0014f2    program     static                          
+                 FXD1616U   0x0014f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x0014fe    program     static                          
+                  endloop   0x00151a    program     static                          
+       ___return_lbl00000   0x00151e    program     static                          
+            __zero_memory   0x001520    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x00152e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x00152e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x001536    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x001538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x001540    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001550    program     static                          
+       ___return_lbl00001   0x00155a    program     static                          
+                 FXD0808U   0x00155c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                     loop   0x001564    program     static                          
+                  endloop   0x001572    program     static                          
+       ___return_lbl00000   0x001576    program     static                          
                __config_0   0x300001    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                __config_1   0x300002    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
                __config_2   0x300003    program     static E:\PIC\Club\EMS\Environmental Monitoring.X\main.c
@@ -698,46 +839,44 @@ DHT11_ReturnHumid_Decimal   0x001c10    program     extern E:\PIC\Club\EMS\Envir
                curr_entry   0x0000fa       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x0000fc       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
              data_receive   0x0000ff       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\uart.c
-       MaskOutputOfButton   0x000100       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-        MaskInputOfButton   0x000104       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-              current_row   0x000108       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-              current_col   0x00010a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
-    DebounceButtonBuffer1   0x000f00       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-    DebounceButtonBuffer2   0x000f10       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-       FlagForButtonPress   0x000f20       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-    CounterForButtonPress   0x000f30       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
-             value_timer0   0x000f50       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer1   0x000f52       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer2   0x000f54       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-             value_timer3   0x000f56       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer0   0x000f58       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer1   0x000f5a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer2   0x000f5c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-           counter_timer3   0x000f5e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer0   0x000f60       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer1   0x000f62       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer2   0x000f64       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-               MUL_timer3   0x000f66       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                    _hour   0x000f68       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                  _minute   0x000f69       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                  _second   0x000f6a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                _week_day   0x000f6b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                    _date   0x000f6c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                   _month   0x000f6d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-                    _year   0x000f6e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-           _flag_get_time   0x000f6f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-           _flag_blinking   0x000f70       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-    _counter_display_time   0x000f71       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-        _counter_time_out   0x000f73       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-        _counter_blinking   0x000f75       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-    _counter_reading_data   0x000f77       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
-              flag_timer0   0x000f79       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer1   0x000f7a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer2   0x000f7b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-              flag_timer3   0x000f7c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
-                     mode   0x000f7d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                mode_data   0x000f7e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
-                  ack_bit   0x000f7f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
+       FlagForButtonPress   0x000f00       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+    CounterForButtonPress   0x000f10       data     static E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+             value_timer0   0x000f30       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer1   0x000f32       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer2   0x000f34       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+             value_timer3   0x000f36       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer0   0x000f38       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer1   0x000f3a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer2   0x000f3c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+           counter_timer3   0x000f3e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer0   0x000f40       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer1   0x000f42       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer2   0x000f44       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+               MUL_timer3   0x000f46       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+                    _hour   0x000f48       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                  _minute   0x000f49       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                  _second   0x000f4a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                _week_day   0x000f4b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                    _date   0x000f4c       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                   _month   0x000f4d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+                    _year   0x000f4e       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+           _flag_get_time   0x000f4f       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+           _flag_blinking   0x000f50       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+    _counter_display_time   0x000f51       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+        _counter_time_out   0x000f53       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+        _counter_blinking   0x000f55       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+    _counter_reading_data   0x000f57       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\global.c
+       MaskOutputOfButton   0x000f59       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+        MaskInputOfButton   0x000f5d       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\button_matrix.c
+              flag_timer0   0x000f61       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer1   0x000f62       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer2   0x000f63       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              flag_timer3   0x000f64       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\timer.c
+              current_row   0x000f65       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+              current_col   0x000f67       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\lcd.c
+                     mode   0x000f69       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                mode_data   0x000f6a       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c
+                  ack_bit   0x000f6b       data     extern E:\PIC\Club\EMS\Environmental Monitoring.X\i2c_ds1307.c
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -758,9 +897,9 @@ DHT11_ReturnHumid_Decimal   0x001c10    program     extern E:\PIC\Club\EMS\Envir
                      LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm

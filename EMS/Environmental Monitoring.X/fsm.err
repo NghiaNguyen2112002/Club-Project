@@ -7,7 +7,6 @@ Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 154 : suspicious 
 Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 186 : suspicious pointer conversion
 Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 225 : suspicious pointer conversion
 Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 226 : suspicious pointer conversion
-Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 242 : suspicious pointer conversion
 Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 244 : suspicious pointer conversion
-Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 246 : suspicious pointer conversion
-Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 249 : suspicious pointer conversion
+Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 247 : suspicious pointer conversion
+Warning[2054] E:\PIC\Club\EMS\Environmental Monitoring.X\fsm.c 252 : suspicious pointer conversion

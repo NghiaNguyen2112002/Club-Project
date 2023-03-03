@@ -8,7 +8,7 @@
 #include "global.h"
 
 // adafruit server is used in this library//
-#define SERVER_PASS                         "aio_pcEH18HX4L1Z8NCooTj9wpERzeiA"
+#define SERVER_PASS                         "aio_LROo234Xf9DvOnkWG7UVOFXAe3En"
 #define SERVER_DOMAIN                       "io.adafruit.com"
 #define SERVER_USER                         "nghianguyen2112002"
 

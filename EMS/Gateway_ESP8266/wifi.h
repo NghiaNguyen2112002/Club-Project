@@ -8,8 +8,8 @@
 #include "global.h"
 #include "MQTT_server.h"
 
-#define WIFI_AP                 "MANGDAYKTX H1-518"
-#define WIFI_PASSWORD           "20202024"
+#define WIFI_AP                 "Vietstar coffee 5G"
+#define WIFI_PASSWORD           "0909098463"
 
 #define WIFI_GATEWAY_STA        "GATEWAY"
 #define WIFI_GATEWAY_PASS       "123456789"

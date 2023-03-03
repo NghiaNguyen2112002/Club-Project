@@ -30,38 +30,26 @@ void main(void) {
     LCD_ClearBuffer();
     
     while(1){
+        while(!flag_timer3);
+        flag_timer3 = 0;
+        
+        KEY_Reading();    
+        
+        if(_flag_get_time) RTC_GetDateTime();
+            
+        if(_counter_display_time >= 5) _counter_display_time -= 5;
+        
+            
+        if(_counter_time_out >= 5) _counter_time_out -= 5;
+        
+        if(_counter_blinking >= 5) _counter_blinking -= 5;
+          
+        if(_counter_reading_data >= 5) _counter_reading_data -= 5;
+           
         FSM_ClockControl();
         FSM_DataControl();
         
-        if(flag_timer0){
-            flag_timer0 = 0;
-//            KEY_Reading();    
-        }
-       
-        
-        if(flag_timer3){
-            flag_timer3 = 0;
-            
-            if(_flag_get_time) RTC_GetDateTime();
-            
-            if(_counter_display_time >= 5){
-                _counter_display_time -= 5;
-            }
-            
-            if(_counter_time_out >= 5){
-                _counter_time_out -= 5;
-            }
-            
-            if(_counter_blinking >= 5){
-                _counter_blinking -= 5;
-            }
-            
-            if(_counter_reading_data >= 5){
-                _counter_reading_data -= 5;
-            }
-            
-            LCD_DisplayScreen();
-        }
+        LCD_DisplayScreen();
     }
     return;
 }
@@ -79,11 +67,11 @@ void SYS_Init(void){
     UART_Init();
     
     //    timer clock is 1Mhz
-    TMR0_Init(4695);                //1ms
+//    TMR0_Init(4695);                //1ms
 //    TMR1_Init(9390);              //2ms
     TMR3_Init(46950);               //10ms
 
-    TMR0_SetTime_ms(10);            //10ms
+//    TMR0_SetTime_ms(10);            //10ms
 //    TMR1_SetTime_ms(50);          //50ms
     TMR3_SetTime_ms(50);            //50ms
 }
